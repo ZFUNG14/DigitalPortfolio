@@ -20,7 +20,7 @@ This portfolio is built using:
 
 ### 1. [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)
 
-AOS allow us to have smooth scroll-based animations to the website. Elements fade in, zoom, or slide as we scroll through the page, improving visual engagement and user experience. Which is the main visual effects I used in this digital portfolio
+AOS allow us to have smooth scroll-based animations to the website. Elements fade in, zoom, or slide as we scroll through the page, improving visual engagement and user experience. This is the main visual effects I used in this digital portfolio
 
 🛠 **Usage:**
 
@@ -46,7 +46,7 @@ Example usage:
 
 ### 3. [Formspree](https://formspree.io)
 
-Formspree enables contact forms without the need for a backend. It lets visitors send you emails directly through the form on your site.
+Formspree enables contact forms without the need for a backend server handling. It lets visitors send me emails directly through the form on my site.
 
 🛠 **Usage:**
 
