@@ -141,24 +141,6 @@ section {
     transform: translateX(-50%) translateY(-8px);
   }
 }
-/*<!-------------------------------About Section with pictures slideshow------------------------------------------------> */
-
-.swiper {
-  width: 100%;
-  max-width: 600px;
-  margin: 30px auto;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-
-
 /*<!-------------------------------Project, Skill and Resume Section------------------------------------------------> */
 
 .project-card:hover {
@@ -256,5 +238,3 @@ footer {
 .footer-right p {
   margin: 4px 0;
 }
-
-

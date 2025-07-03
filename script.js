@@ -9,7 +9,7 @@ const typed = new Typed("#typed", {
 // AOS init
 AOS.init({
   duration: 1000,
-  once: true
+  once: false
 });
 
 //Back to Top Button 
@@ -54,6 +54,8 @@ new Swiper('.mySwiper', {
     clickable: true,
   }
 });
+
+
 
 
 

@@ -7,10 +7,7 @@
     <title>ZiFung's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="libs/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <!-------------------------------Body Content------------------------------------------------>
@@ -37,31 +34,6 @@
       </p>
 
       <!-------------------------------Photo Section------------------------------------------------>
-
-      <p>
-        When I’m not coding, you’ll find me playing guitar, studying and
-        experimenting film photography, or reading books about human psychology.
-      </p>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="media/guitar.jpg" alt="Guitar" />
-          </div>
-          <div class="swiper-slide">
-            <img src="media/film.jpg" alt="Photography" />
-          </div>
-          <div class="swiper-slide">
-            <img src="media/books.jpg" alt="Books" />
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <p>
-        These hobbies not only help me relax but also inspire my creativity and
-        problem-solving skills in tech.
-      </p>
-
-      <!-------------------------------another Photo Section?------------------------------------------------>
     </section>
 
     <!-------------------------------Project Section------------------------------------------------>
@@ -69,10 +41,11 @@
       <h2>Projects 📁</h2>
 
       <div class="project-card">
-        <h3>AI Resume Parser</h3>
+        <h3>Mini Language Translator and Executor</h3>
         <p>
-          A tool built using NLP and Python to extract key details (skills,
-          education, experience) from resumes in PDF format.
+          Developed a C11-based translator and execution system for a custom
+          mini-language, converting “.ml” programs into C11 for compilation and
+          execution.
         </p>
         <a href="https://github.com/username/resume-parser" target="_blank"
           >View Code</a
@@ -80,10 +53,10 @@
       </div>
 
       <div class="project-card">
-        <h3>Covid-19 Dashboard</h3>
+        <h3>Electronic Medical Record System</h3>
         <p>
-          Interactive dashboard using Plotly Dash to visualize global and
-          country-wise COVID-19 trends.
+          Designed and implemented a Java-based Hospital Management System to
+          streamline patient management and administrative tasks.
         </p>
         <a href="https://github.com/username/covid-dashboard" target="_blank"
           >View Code</a
@@ -91,10 +64,29 @@
       </div>
 
       <div class="project-card">
-        <h3>ML-Based Stock Predictor</h3>
+        <h3>Soul Maps</h3>
         <p>
-          Built a machine learning model that predicts stock price movements
-          using historical data and sentiment analysis.
+          A personal media tracker and social sharing platform built with Flask
+        </p>
+        <a href="https://github.com/username/stock-predictor" target="_blank"
+          >View Code</a
+        >
+      </div>
+
+      <div class="project-card">
+        <h3>Battleships: Engage in Explosive Rivalry (BEER)</h3>
+        <p>A networked multiplayer Battleship game built in Python</p>
+        <a href="https://github.com/username/stock-predictor" target="_blank"
+          >View Code</a
+        >
+      </div>
+
+      <div class="project-card">
+        <h3>IoT Parking System in Smart City</h3>
+        <p>
+          Conducted research on an innovative IoT Parking System aimed at
+          enhancing urban mobility by utilising existing surveillance cameras as
+          IoT devices.
         </p>
         <a href="https://github.com/username/stock-predictor" target="_blank"
           >View Code</a
@@ -121,6 +113,29 @@
         <div>Neo4j</div>
       </div>
     </section>
+    <!-------------------------------Outside work/studies section------------------------------------------------>
+    <section id="interest" data-aos="fade-up">
+      <h2>When I’m not coding.....</h2>
+      <p>
+        you’ll find me playing guitar, studying and experimenting film
+        photography, or reading books about human psychology.
+      </p>
+      <div class="pictures">
+        <div class="guitar">
+          <img src="media/guitar.jpg" alt="Guitar" />
+        </div>
+        <div class="film">
+          <img src="media/film.jpg" alt="Photography" />
+        </div>
+        <div class="books">
+          <img src="media/books.jpg" alt="Books" />
+        </div>
+      </div>
+      <p>
+        These hobbies not only help me relax but also inspire my creativity and
+        problem-solving skills in tech.
+      </p>
+    </section>
 
     <!-------------------------------Contact Section with formspree------------------------------------------------>
     <section id="contact" data-aos="fade-up">
@@ -146,9 +161,6 @@
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
     />
-
-    <!-- Swiper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
