@@ -1,6 +1,6 @@
 // Typed.js
 const typed = new Typed("#typed", {
-  strings: ["Computer Science Student", "Data Scientist", "Machine Learning Enthusiast", "Software Developer"],
+  strings: ["Computer Science Student.", "Data Scientist.", "Machine Learning Enthusiast.", "Software Developer."],
   typeSpeed: 50,
   backSpeed: 25,
   loop: true
@@ -40,5 +40,22 @@ window.addEventListener('scroll', () => {
     backToTop.classList.add('hidden');
   }
 });
+
+//animation when travel back to About Me Section
+document.querySelector('.scroll-prompt').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('#about').scrollIntoView({ 
+    behavior: 'smooth'
+  });
+});
+
+//animation when travel back to Home Section 
+document.getElementById('backToTop').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('#home').scrollIntoView({
+    behavior: 'smooth'
+  });
+});
+
 
 

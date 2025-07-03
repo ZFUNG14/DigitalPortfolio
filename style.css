@@ -3,22 +3,21 @@ header {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 75px; /* collapsed width */
+  width: 200px;
   background: #313131;
-  overflow: hidden;
-  transition: width 0.3s ease;
-  z-index: 1000;
+  transform: translateX(-125px); /* Start partially hidden */
+  transition: transform 0.3s ease;
+  z-index: 999;
 }
 
 header:hover {
-  width: 200px;
+  transform: translateX(0); /* Slide in */
 }
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  padding-left: 60px; /* match collapsed width */
   scroll-behavior: smooth;
   background-color: #313131;
   color: #fff;
@@ -169,6 +168,7 @@ section:hover {
 
 /*<!-------------------------------Hero Area------------------------------------------------> */
 .hero {
+  position: relative;
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -186,20 +186,20 @@ section:hover {
 }
 
 .scroll-prompt {
-  position: absolute;
+  position: absolute; /* stays inside .hero */
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 1rem;
   color: #ffffff;
-  background-color: rgba(0, 173, 181, 0.3); /* semi-transparent turquoise */
+  background-color: rgba(0, 173, 181, 0.3);
   padding: 10px 20px;
   border-radius: 30px;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
   animation: bounce 2s infinite;
   font-weight: bold;
-  z-index: 100;
+  z-index: 1100; /* ensure it’s above inner text */
 }
 
 .scroll-prompt:hover {
