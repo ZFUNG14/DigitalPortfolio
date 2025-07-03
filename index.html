@@ -29,6 +29,10 @@
         <h1>Hello👋, I'm <span class="name">Zi Fung 🤓</span></h1>
         <h2><span id="typed"></span></h2>
       </div>
+    <!-- 🔽 Scroll Prompt -->
+      <a href="#about" class="scroll-prompt">
+        ↓ Scroll to About Me
+      </a>
     </section>
 
     <!-------------------------------About Section------------------------------------------------>
@@ -133,6 +137,7 @@
         <p>Find me on LinkedIn or Github</p>
       </p>
     </section>
+    <a href="#home" id="backToTop" class="back-to-top hidden" title="Return to Top">⬆</a>
 
     <!-------------------------------External Library Link------------------------------------------------>
     <!-- AOS CSS -->
@@ -153,20 +158,5 @@
         <em>© 2025 Tan Zi Fung. All rights reserved.</em>
       </p>
     </footer>
-    <script>
-  const header = document.querySelector('.sidebar-header');
-  const heroSection = document.querySelector('.hero');
-
-  window.addEventListener('scroll', () => {
-    const heroBottom = heroSection.getBoundingClientRect().bottom;
-
-    if (heroBottom <= 0) {
-      header.classList.remove('hidden'); // Show sidebar
-    } else {
-      header.classList.add('hidden'); // Hide sidebar
-    }
-  });
-</script>
-
   </body>
 </html>
