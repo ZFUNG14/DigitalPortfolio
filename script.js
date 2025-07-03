@@ -1,6 +1,6 @@
 // Typed.js
 const typed = new Typed("#typed", {
-  strings: ["Computer Science Student", "Data Scientist", "Machine Learning Enthusiast", "Software Developer"],
+  strings: ["Computer Science Student", "Data Scientist", "Machine Learning Enthusiast", "Software Developer","Scroll Down to Learn More!"],
   typeSpeed: 50,
   backSpeed: 25,
   loop: true
