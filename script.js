@@ -43,5 +43,17 @@ document.getElementById('backToTop').addEventListener('click', function(e) {
   });
 });
 
+new Swiper('.mySwiper', {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  }
+});
+
 
 

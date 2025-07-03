@@ -141,6 +141,22 @@ section {
     transform: translateX(-50%) translateY(-8px);
   }
 }
+/*<!-------------------------------About Section with pictures slideshow------------------------------------------------> */
+
+.swiper {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 
 
 /*<!-------------------------------Project, Skill and Resume Section------------------------------------------------> */
@@ -199,10 +215,46 @@ form button {
 h2, h3 {
   color: #fff;
 }
-
-.footer_note{
-    text-align: center;
-    font-family:'Times New Roman', Times, serif;
-    color: grey;
+footer {
+  padding: 40px 20px;
+  background-color: #2b2b2b;
+  color: #ccc;
+  font-size: 0.95rem;
 }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-left,
+.footer-right {
+  margin: 10px 0;
+}
+
+.footer-left {
+  font-style: italic;
+  font-family: 'Times New Roman', serif;
+  color: #aaa;
+}
+
+.footer-right a {
+  color: #00adb5;
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.footer-right p {
+  margin: 4px 0;
+}
+
 

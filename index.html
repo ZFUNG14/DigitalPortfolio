@@ -7,6 +7,10 @@
     <title>ZiFung's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="libs/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <!-------------------------------Body Content------------------------------------------------>
@@ -17,15 +21,13 @@
         <h1>Hello👋, I'm <span class="name">Zi Fung 🤓</span></h1>
         <h2>I'm a <span id="typed"></span></h2>
       </div>
-    <!-- 🔽 Scroll Prompt -->
-      <a href="#about" class="scroll-prompt">
-        Welcome 
-      </a>
+      <!-- 🔽 Scroll Prompt -->
+      <a href="#about" class="scroll-prompt"> Welcome </a>
     </section>
 
     <!-------------------------------About Section------------------------------------------------>
     <section id="about" data-aos="fade-right">
-      <h2>About Me 👨🏼‍💻</h2>
+      <h2>About 👨🏼‍💻</h2>
       <p>
         Hi! My name is Zi Fung and I'm a final year Computer Science and Data
         Science undergraduate at The University of Western Australia. I am
@@ -33,12 +35,32 @@
         real-world problems with code and data. I love exploring machine
         learning, backend development, and data visualization!
       </p>
+
       <!-------------------------------Photo Section------------------------------------------------>
 
       <p>
         When I’m not coding, you’ll find me playing guitar, studying and
         experimenting film photography, or reading books about human psychology.
       </p>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="media/guitar.jpg" alt="Guitar" />
+          </div>
+          <div class="swiper-slide">
+            <img src="media/film.jpg" alt="Photography" />
+          </div>
+          <div class="swiper-slide">
+            <img src="media/books.jpg" alt="Books" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <p>
+        These hobbies not only help me relax but also inspire my creativity and
+        problem-solving skills in tech.
+      </p>
+
       <!-------------------------------another Photo Section?------------------------------------------------>
     </section>
 
@@ -100,15 +122,6 @@
       </div>
     </section>
 
-    <!-------------------------------Resume Section------------------------------------------------>
-    <section id="resume" data-aos="fade-up">
-      <h2>Resume 📝</h2>
-      <p>You can view or download my resume below:</p>
-      <a href="assets/resume.pdf" target="_blank" class="button"
-        >Download Resume</a
-      >
-    </section>
-
     <!-------------------------------Contact Section with formspree------------------------------------------------>
     <section id="contact" data-aos="fade-up">
       <h2>Contact Me 📩</h2>
@@ -118,14 +131,14 @@
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
       </form>
-      <p>
-        Email me directly at
-        <a href="mailto:you@example.com">tanzifung@gmail.com</a>
-      <p>Or</p>
-        <p>Find me on LinkedIn or Github</p>
-      </p>
     </section>
-    <a href="#home" id="backToTop" class="back-to-top hidden" title="Return to Top">⬆</a>
+    <a
+      href="#home"
+      id="backToTop"
+      class="back-to-top hidden"
+      title="Return to Top"
+      >⬆</a
+    >
 
     <!-------------------------------External Library Link------------------------------------------------>
     <!-- AOS CSS -->
@@ -133,6 +146,9 @@
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
     />
+
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -142,9 +158,29 @@
     <script src="script.js"></script>
 
     <footer>
-      <p class="footer_note">
-        <em>© 2025 Tan Zi Fung. All rights reserved.</em>
-      </p>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p class="footer_note">© 2025 Tan Zi Fung. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:tanzifung@gmail.com">tanzifung@gmail.com</a>
+          </p>
+          <p>
+            <strong>Connect:</strong>
+            <a href="https://linkedin.com/in/zfung14" target="_blank"
+              >LinkedIn</a
+            >
+            /
+            <a href="https://github.com/ZFUNG14" target="_blank">GitHub</a>
+          </p>
+          <p>
+            <strong>CV: </strong>
+            <a href="media/ZiFungTanCCV.pdf">Download a Copy </a>
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
