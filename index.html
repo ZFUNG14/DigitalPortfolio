@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio | Zi Fung</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="libs/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav class="sidebar">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="intro-text" data-aos="fade-up">
+        <h1>Hello👋, I'm <span class="name">Zi Fung 🤓</span></h1>
+        <h2><span id="typed"></span></h2>
+      </div>
+    </section>
+
+    <section id="about" data-aos="fade-right">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm a final year Computer Science and Data Science undergraduate at
+        The University of Western Australia. I am particularly passionate about
+        building intelligent systems and solving real-world problems with code
+        and data. I love exploring machine learning, backend development, and
+        data visualization.
+      </p>
+      <p>
+        When I’m not coding, you’ll find me playing guitar, studying and
+        experimenting film photography, or reading books about human psychology.
+      </p>
+    </section>
+
+    <section id="projects" data-aos="zoom-in">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>AI Resume Parser</h3>
+        <p>
+          A tool built using NLP and Python to extract key details (skills,
+          education, experience) from resumes in PDF format.
+        </p>
+        <a href="https://github.com/username/resume-parser" target="_blank"
+          >View Code</a
+        >
+      </div>
+
+      <div class="project-card">
+        <h3>Covid-19 Dashboard</h3>
+        <p>
+          Interactive dashboard using Plotly Dash to visualize global and
+          country-wise COVID-19 trends.
+        </p>
+        <a href="https://github.com/username/covid-dashboard" target="_blank"
+          >View Code</a
+        >
+      </div>
+
+      <div class="project-card">
+        <h3>ML-Based Stock Predictor</h3>
+        <p>
+          Built a machine learning model that predicts stock price movements
+          using historical data and sentiment analysis.
+        </p>
+        <a href="https://github.com/username/stock-predictor" target="_blank"
+          >View Code</a
+        >
+      </div>
+    </section>
+
+    <section id="skills" data-aos="fade-left">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div>Python</div>
+        <div>Java</div>
+        <div>C++</div>
+        <div>C/C#</div>
+        <div>JavaScript</div>
+        <div>HTML & CSS</div>
+        <div>SQL</div>
+        <div>NumPy & Pandas</div>
+        <div>Flask</div>
+        <div>Git & GitHub</div>
+        <div>Docker</div>
+        <div>Tableau</div>
+        <div>Neo4j</div>
+      </div>
+    </section>
+
+    <section id="resume" data-aos="fade-up">
+      <h2>Resume</h2>
+      <p>You can view or download my resume below:</p>
+      <a href="assets/resume.pdf" target="_blank" class="button"
+        >Download Resume</a
+      >
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p>
+        Or email me directly at
+        <a href="mailto:you@example.com">tanzifung@gmail.com</a>
+      </p>
+    </section>
+
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <footer>
+      <p class="footer_note">
+        <em>© 2025 Tan Zi Fung. All rights reserved.</em>
+      </p>
+    </footer>
+  </body>
+</html>
