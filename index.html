@@ -11,7 +11,7 @@
   <!-------------------------------Body Content------------------------------------------------>
   <body>
     <!-------------------------------Sidebar------------------------------------------------>
-    <header>
+    <header class = "sidebar-header hidden">
       <nav class="sidebar">
         <ul>
           <li><a href="#about">About</a></li>
@@ -153,5 +153,20 @@
         <em>© 2025 Tan Zi Fung. All rights reserved.</em>
       </p>
     </footer>
+    <script>
+  const header = document.querySelector('.sidebar-header');
+  const heroSection = document.querySelector('.hero');
+
+  window.addEventListener('scroll', () => {
+    const heroBottom = heroSection.getBoundingClientRect().bottom;
+
+    if (heroBottom <= 0) {
+      header.classList.remove('hidden'); // Show sidebar
+    } else {
+      header.classList.add('hidden'); // Hide sidebar
+    }
+  });
+</script>
+
   </body>
 </html>
