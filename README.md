@@ -1,10 +1,64 @@
-# To do next!
+# 🎉 Welcome!
 
-1. add more content in there, maybe have a blog post area where u yap about your daily life (but do it at external blog site)
-2. refine the aesthetic (background color and scroll logic (rn if u scroll up animation doesnt work))
-3. upload shit ton of stuff to your github
-4. update your resume and put it there
-5. put your linkedin here as well
-6. deploy it
+This source code powers **Tan Zi Fung's personal digital portfolio**, currently hosted at [DOMAIN NAME](https://).  
+It showcases my projects, skills, and background, with a clean, scroll driven interface and interactive animations.
 
-this could actually work!!!
+---
+
+## 🔧 Techical Overview
+
+This portfolio is built using:
+
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Three Key External Libraries** (detailed below)
+
+---
+
+## 📦 Core External Libraries
+
+### 1. [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)
+
+AOS allow us to have smooth scroll-based animations to the website. Elements fade in, zoom, or slide as we scroll through the page, improving visual engagement and user experience. This is the main visual effects I used in this digital portfolio
+
+🛠 **Usage:**
+
+- Animating all sections like "About", "Projects", and "Contact" on scroll.
+- Example usage:
+  ```html
+  <section id="about" data-aos="fade-right">...</section>
+  ```
+
+### 2. [Typed.js](https://mattboldt.com/demos/typed-js/)
+
+Typed.js is a JavaScript library that creates a typewriter effect, where text types and deletes itself dynamically.
+
+🛠 **Usage:**
+Creating the animated typing effect in the hero section.
+Example usage:
+
+```html
+<span id="typed"></span>
+```
+
+(with the actual script logic in script.js)
+
+### 3. [Formspree](https://formspree.io)
+
+Formspree enables contact forms without the need for a backend server handling. It lets visitors send me emails directly through the form on my site.
+
+🛠 **Usage:**
+
+Handling form submissions in the "Contact Me" section securely.
+Example usage:
+
+```html
+<form action="https://formspree.io/f/yourformid" method="POST">...</form>
+```
+
+## 📫 Contact
+
+If you have any feedback or suggestions, feel free to reach out at [tanzifung@gmail.com](mailto:tanzifung@gmail.com).
+
+💡 Side note: Feel free to fork or clone this repository for your own use!

@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-------------------------------Head Content------------------------------------------------>
   <head>
     <meta charset="UTF-8" />
-    <title>Portfolio | Zi Fung</title>
+    <!--<link rel="icon" type="image/png" href="media/icon2.png" /> -->
+    <title>ZiFung's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="libs/aos.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
+  <!-------------------------------Body Content------------------------------------------------>
   <body>
-    <header>
-      <nav class="sidebar">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
+    <!-------------------------------Main Hero Section with TypeScript------------------------------------------------>
     <section class="hero" id="home">
       <div class="intro-text" data-aos="fade-up">
         <h1>Hello👋, I'm <span class="name">Zi Fung 🤓</span></h1>
-        <h2><span id="typed"></span></h2>
+        <h2>I'm a <span id="typed"></span></h2>
       </div>
+      <!-- 🔽 Scroll Prompt -->
+      <a href="#about" class="scroll-prompt"> Welcome </a>
     </section>
 
+    <!-------------------------------About Section------------------------------------------------>
     <section id="about" data-aos="fade-right">
-      <h2>About Me</h2>
+      <h2>About 👨🏼‍💻</h2>
       <p>
-        Hi! I'm a final year Computer Science and Data Science undergraduate at
-        The University of Western Australia. I am particularly passionate about
-        building intelligent systems and solving real-world problems with code
-        and data. I love exploring machine learning, backend development, and
-        data visualization.
+        Hi! My name is Zi Fung and I'm a final year Computer Science and Data
+        Science undergraduate at The University of Western Australia. I am
+        particularly passionate about building intelligent systems and solving
+        real-world problems with code and data. I love exploring machine
+        learning, backend development, and data visualization!
       </p>
-      <p>
-        When I’m not coding, you’ll find me playing guitar, studying and
-        experimenting film photography, or reading books about human psychology.
-      </p>
+
+      <!-------------------------------Photo Section------------------------------------------------>
     </section>
 
+    <!-------------------------------Project Section------------------------------------------------>
     <section id="projects" data-aos="zoom-in">
-      <h2>Projects</h2>
+      <h2>Projects 📁</h2>
 
       <div class="project-card">
-        <h3>AI Resume Parser</h3>
+        <h3>Mini Language Translator and Executor</h3>
         <p>
-          A tool built using NLP and Python to extract key details (skills,
-          education, experience) from resumes in PDF format.
+          Developed a C11-based translator and execution system for a custom
+          mini-language, converting “.ml” programs into C11 for compilation and
+          execution.
         </p>
         <a href="https://github.com/username/resume-parser" target="_blank"
           >View Code</a
@@ -57,10 +53,10 @@
       </div>
 
       <div class="project-card">
-        <h3>Covid-19 Dashboard</h3>
+        <h3>Electronic Medical Record System</h3>
         <p>
-          Interactive dashboard using Plotly Dash to visualize global and
-          country-wise COVID-19 trends.
+          Designed and implemented a Java-based Hospital Management System to
+          streamline patient management and administrative tasks.
         </p>
         <a href="https://github.com/username/covid-dashboard" target="_blank"
           >View Code</a
@@ -68,10 +64,29 @@
       </div>
 
       <div class="project-card">
-        <h3>ML-Based Stock Predictor</h3>
+        <h3>Soul Maps</h3>
         <p>
-          Built a machine learning model that predicts stock price movements
-          using historical data and sentiment analysis.
+          A personal media tracker and social sharing platform built with Flask
+        </p>
+        <a href="https://github.com/username/stock-predictor" target="_blank"
+          >View Code</a
+        >
+      </div>
+
+      <div class="project-card">
+        <h3>Battleships: Engage in Explosive Rivalry (BEER)</h3>
+        <p>A networked multiplayer Battleship game built in Python</p>
+        <a href="https://github.com/username/stock-predictor" target="_blank"
+          >View Code</a
+        >
+      </div>
+
+      <div class="project-card">
+        <h3>IoT Parking System in Smart City</h3>
+        <p>
+          Conducted research on an innovative IoT Parking System aimed at
+          enhancing urban mobility by utilising existing surveillance cameras as
+          IoT devices.
         </p>
         <a href="https://github.com/username/stock-predictor" target="_blank"
           >View Code</a
@@ -79,8 +94,9 @@
       </div>
     </section>
 
+    <!-------------------------------Skills Section------------------------------------------------>
     <section id="skills" data-aos="fade-left">
-      <h2>Skills</h2>
+      <h2>Skills 🛠️</h2>
       <div class="skill-grid">
         <div>Python</div>
         <div>Java</div>
@@ -97,29 +113,58 @@
         <div>Neo4j</div>
       </div>
     </section>
-
-    <section id="resume" data-aos="fade-up">
-      <h2>Resume</h2>
-      <p>You can view or download my resume below:</p>
-      <a href="assets/resume.pdf" target="_blank" class="button"
-        >Download Resume</a
-      >
+    <!-------------------------------Outside work/studies section------------------------------------------------>
+    <section id="interest" data-aos="fade-up">
+      <h2>When I’m not coding.....</h2>
+      <p>
+        you’ll find me playing guitar, studying and experimenting film
+        photography, or reading books about human psychology. These hobbies not
+        only help me relax but also inspire my creativity and problem-solving
+        skills in tech.
+      </p>
+      <div class="pictures">
+        <div class="guitar">
+          <img src="media/guitar.jpg" alt="Guitar" />
+        </div>
+        <div class="film">
+          <img src="media/film.jpg" alt="Photography" />
+        </div>
+        <div class="books">
+          <img src="media/books.jpg" alt="Books" />
+        </div>
+      </div>
+      <p>
+        Besides, I am also very actively invovled in the Malaysian Cultural
+        Society in UWA. As the President, I lead a team of 50 passionate
+        individuals to organise cultural events, promote Malaysian culture, and
+        foster a sense of community among Malaysian students at UWA. Through
+        this role, I have honed my leadership, event management, and
+        communication skills, while also deepening my understanding of the rich
+        and diverse Malaysian culture. I am proud to be part of a community that
+        celebrates our heritage and brings people together through cultural
+        exchange.
+      </p>
     </section>
 
+    <!-------------------------------Contact Section with formspree------------------------------------------------>
     <section id="contact" data-aos="fade-up">
-      <h2>Contact Me</h2>
+      <h2>Contact Me 📩</h2>
       <form action="https://formspree.io/f/yourformid" method="POST">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="_replyto" placeholder="Your Email" required />
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
       </form>
-      <p>
-        Or email me directly at
-        <a href="mailto:you@example.com">tanzifung@gmail.com</a>
-      </p>
     </section>
+    <a
+      href="#home"
+      id="backToTop"
+      class="back-to-top hidden"
+      title="Return to Top"
+      >⬆</a
+    >
 
+    <!-------------------------------External Library Link------------------------------------------------>
     <!-- AOS CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
@@ -134,9 +179,29 @@
     <script src="script.js"></script>
 
     <footer>
-      <p class="footer_note">
-        <em>© 2025 Tan Zi Fung. All rights reserved.</em>
-      </p>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p class="footer_note">© 2025 Tan Zi Fung. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:tanzifung@gmail.com">tanzifung@gmail.com</a>
+          </p>
+          <p>
+            <strong>Connect:</strong>
+            <a href="https://linkedin.com/in/zfung14" target="_blank"
+              >LinkedIn</a
+            >
+            /
+            <a href="https://github.com/ZFUNG14" target="_blank">GitHub</a>
+          </p>
+          <p>
+            <strong>CV: </strong>
+            <a href="media/ZiFungTanCCV.pdf">Download a Copy </a>
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
