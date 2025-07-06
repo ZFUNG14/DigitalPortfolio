@@ -173,6 +173,28 @@ h2, h3 {
 #myCanvas {
   display: block;
 }
+/*<!-------------------------------When I'm not coding (Personal Interest)------------------------------------------------> */
+.photo-collage {
+  column-count: 3;         
+  column-gap: 12px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 16px;
+}
+
+.photo-collage img {
+  width: 100%;
+  display: block;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  break-inside: avoid;     
+}
+
+.last-column img{
+    break-inside: avoid;  
+    display: block;
+    width : 106%;
+}
 
 /*<!-------------------------------Contact Section with Formspree------------------------------------------------> */
 form input, form textarea {
