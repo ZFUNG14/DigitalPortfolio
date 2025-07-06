@@ -21,6 +21,10 @@ section {
   max-width: 900px;
   margin: auto;
 }
+
+h2, h3 {
+  color: #fff;
+}
 /*<!-------------------------------Back to top button------------------------------------------------> */
 
 .back-to-top {
@@ -150,7 +154,8 @@ section {
 }
 
 .project-card {
-  background: #fff;
+  background: #1E1E1E; 
+  color: #fff;
   padding: 20px;
   margin: 15px 0;
   border-radius: 8px;
@@ -175,6 +180,8 @@ form input, form textarea {
   width: 100%;
   margin: 10px 0;
   padding: 10px;
+  border-radius: 20px;
+  border-color: black;
 }
 
 form button {
@@ -182,20 +189,26 @@ form button {
   border: none;
   padding: 10px 20px;
   color: white;
+  align-items: center;
+  display: block;
+  margin: 20px auto 0 auto;
+  border-radius: 50px;
+  padding-top: 10px;  
 }
 
-.project-card {
-  background: #1E1E1E; 
-  color: #fff;
+form button:hover {
+  background-color: #008e96;
+  cursor:pointer;
 }
 
-.button:hover {
-  background-color: #028f98;
+form textarea{
+  resize: none;
 }
 
-h2, h3 {
-  color: #fff;
-}
+
+
+
+/*<!-------------------------------Footer area with contact details------------------------------------------------> */
 footer {
   padding: 40px 20px;
   background-color: #2b2b2b;
