@@ -89,7 +89,6 @@ h2, h3 {
   }
 }
 
-/* Hidden by default */
 .back-to-top.hidden {
   opacity: 0;
   pointer-events: none;
@@ -179,7 +178,7 @@ h2, h3 {
 form input, form textarea {
   width: 100%;
   margin: 10px 0;
-  padding: 13px 20px;
+  padding: 13px;
   border-radius: 20px;
   border-color: black;
   border: 1px solid #ccc;
