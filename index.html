@@ -19,6 +19,9 @@
       type="module"
     ></script>
 
+    <!-- tagcanvas for skill section -->
+    <script src="libs/tagcanvas.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <!-------------------------------Body Content------------------------------------------------>
@@ -107,23 +110,45 @@
     <!-------------------------------Skills Section------------------------------------------------>
     <section id="skills" data-aos="fade-left">
       <h2>Skills 🛠️</h2>
-      <p>My soft and hard skills are listed here but not limited to:</p>
-      <div class="skill-grid">
-        <div>Python</div>
-        <div>Java</div>
-        <div>C++</div>
-        <div>C/C#</div>
-        <div>JavaScript</div>
-        <div>HTML & CSS</div>
-        <div>SQL</div>
-        <div>NumPy & Pandas</div>
-        <div>Flask</div>
-        <div>Git & GitHub</div>
-        <div>Docker</div>
-        <div>Tableau</div>
-        <div>Neo4j</div>
+      <p>A summary of the core tecnologies I work with daily:</p>
+      <div class="skill-section">
+        <div id="myCanvasContainer">
+          <canvas width="550" height="350" id="myCanvas">
+            <p>Canvas not supported.</p>
+          </canvas>
+        </div>
+        <div id="tags">
+          <ul>
+            <li><a href="#skills">Python</a></li>
+            <li><a href="#skills">Java</a></li>
+            <li><a href="#skills">C++</a></li>
+            <li><a href="#skills">JavaScript</a></li>
+            <li><a href="#skills">Neo4j</a></li>
+            <li><a href="#skills">Tableau</a></li>
+            <li><a href="#skills">C/C#</a></li>
+            <li><a href="#skills">HTML & CSS</a></li>
+            <li><a href="#skills">SQL</a></li>
+            <li><a href="#skills">NumPy & Pandas</a></li>
+            <li><a href="#skills">Flask</a></li>
+            <li><a href="#skills">Git & GitHub</a></li>
+            <li><a href="#skills">Docker</a></li>
+            <li><a href="#skills">R & Rstudio</a></li>
+            <li><a href="#skills">Bash / Shell Scripting</a></li>
+            <li><a href="#skills">Markdown</a></li>
+            <li><a href="#skills">Jupyter Notebook</a></li>
+            <li><a href="#skills">VS Code</a></li>
+            <li><a href="#skills">Figma</a></li>
+            <li><a href="#skills">Notion / Obsidian</a></li>
+            <!--<li><a href="#skills">React / Vue / Svelte </a></li>
+            <li><a href="#skills">Node.js / Express</a></li>
+            <li><a href="#skills"> MongoDB / Firebase</a></li>
+            <li><a href="#skills">REST / GraphQL APIs </a></li>
+            <li><a href="#skills">Pytest / unittest </a></li>-->
+          </ul>
+        </div>
       </div>
     </section>
+
     <!-------------------------------Outside work/studies section------------------------------------------------>
     <section id="interest" data-aos="fade-up">
       <h2>🎸 📸 📚 🏃🏼When I’m not coding.....</h2>
@@ -260,19 +285,24 @@
       });
       lightbox.init();
 
-      // SWIPER JS FOR SLIDESHOW
-      // 👈 change this value to control slide interval in milliseconds (e.g., 4000 = 4 seconds)
-      new Swiper(".mySwiper", {
-        loop: true,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
+      //<!-------------------------------External Library Link------------------------------------------------>
+      window.onload = function () {
+        try {
+          TagCanvas.Start("myCanvas", "tags", {
+            textColour: "#ffffff",
+            outlineColour: "#00adb5",
+            reverse: true,
+            depth: 0.05,
+            maxSpeed: 0.05,
+            zoom: 1.2,
+            wheelZoom: false,
+            pinchZoom: false,
+          });
+        } catch (e) {
+          document.getElementById("myCanvasContainer").style.display = "none";
+          console.error("TagCanvas error:", e);
+        }
+      };
     </script>
   </body>
 </html>
