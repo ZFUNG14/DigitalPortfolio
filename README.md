@@ -12,7 +12,7 @@ This portfolio is built using:
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **Three Key External Libraries** (detailed below)
+- **Four Key External Libraries** (detailed below)
 
 ---
 
@@ -55,6 +55,18 @@ Example usage:
 
 ```html
 <form action="https://formspree.io/f/yourformid" method="POST">...</form>
+```
+
+### 4. [TagCanvas](https://www.goat1000.com/tagcanvas.php)
+
+TagCanvas is a lightweight JavaScript library that creates interactive, animated 3D tag clouds using the HTML5 <canvas> element.
+
+🛠 **Usage:**
+In my portfolio, I used this library to make the display of my core daily technologies more interactive and engaging.
+Example usage:
+
+```html
+<canvas width="550" height="350" id="myCanvas">...</canvas>
 ```
 
 ## 📫 Contact

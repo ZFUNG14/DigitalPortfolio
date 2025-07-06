@@ -7,6 +7,20 @@
     <title>ZiFung's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="libs/aos.css" />
+    <!-- PhotoSwipe CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/photoswipe@5/dist/photoswipe.css"
+    />
+    <!-- PhotoSwipe JS -->
+    <script src="https://unpkg.com/photoswipe@5/dist/photoswipe.min.js"></script>
+    <script
+      src="https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.min.js"
+      type="module"
+    ></script>
+
+    <!-- tagcanvas for skill section -->
+    <script src="libs/tagcanvas.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -38,9 +52,8 @@
 
     <!-------------------------------Project Section------------------------------------------------>
     <section id="projects" data-aos="zoom-in">
-      <h2>Projects 📁</h2>
-
-      <div class="project-card">
+      <h2 data-aos="fade-left">Projects 📁</h2>
+      <div class="project-card" data-aos="fade-left">
         <h3>Mini Language Translator and Executor</h3>
         <p>
           Developed a C11-based translator and execution system for a custom
@@ -52,7 +65,7 @@
         >
       </div>
 
-      <div class="project-card">
+      <div class="project-card" data-aos="fade-right">
         <h3>Electronic Medical Record System</h3>
         <p>
           Designed and implemented a Java-based Hospital Management System to
@@ -63,7 +76,7 @@
         >
       </div>
 
-      <div class="project-card">
+      <div class="project-card" data-aos="fade-left">
         <h3>Soul Maps</h3>
         <p>
           A personal media tracker and social sharing platform built with Flask
@@ -73,7 +86,7 @@
         >
       </div>
 
-      <div class="project-card">
+      <div class="project-card" data-aos="fade-right">
         <h3>Battleships: Engage in Explosive Rivalry (BEER)</h3>
         <p>A networked multiplayer Battleship game built in Python</p>
         <a href="https://github.com/username/stock-predictor" target="_blank"
@@ -81,7 +94,7 @@
         >
       </div>
 
-      <div class="project-card">
+      <div class="project-card" data-aos="fade-left">
         <h3>IoT Parking System in Smart City</h3>
         <p>
           Conducted research on an innovative IoT Parking System aimed at
@@ -97,42 +110,99 @@
     <!-------------------------------Skills Section------------------------------------------------>
     <section id="skills" data-aos="fade-left">
       <h2>Skills 🛠️</h2>
-      <div class="skill-grid">
-        <div>Python</div>
-        <div>Java</div>
-        <div>C++</div>
-        <div>C/C#</div>
-        <div>JavaScript</div>
-        <div>HTML & CSS</div>
-        <div>SQL</div>
-        <div>NumPy & Pandas</div>
-        <div>Flask</div>
-        <div>Git & GitHub</div>
-        <div>Docker</div>
-        <div>Tableau</div>
-        <div>Neo4j</div>
+      <p>A summary of the core tecnologies I work with daily:</p>
+      <div class="skill-section">
+        <div id="myCanvasContainer">
+          <canvas width="550" height="350" id="myCanvas">
+            <p>Canvas not supported.</p>
+          </canvas>
+        </div>
+        <div id="tags">
+          <ul>
+            <li><a href="#skills">Python</a></li>
+            <li><a href="#skills">Java</a></li>
+            <li><a href="#skills">C++</a></li>
+            <li><a href="#skills">JavaScript</a></li>
+            <li><a href="#skills">Neo4j</a></li>
+            <li><a href="#skills">Tableau</a></li>
+            <li><a href="#skills">C/C#</a></li>
+            <li><a href="#skills">HTML & CSS</a></li>
+            <li><a href="#skills">SQL</a></li>
+            <li><a href="#skills">NumPy & Pandas</a></li>
+            <li><a href="#skills">Flask</a></li>
+            <li><a href="#skills">Git & GitHub</a></li>
+            <li><a href="#skills">Docker</a></li>
+            <li><a href="#skills">R & Rstudio</a></li>
+            <li><a href="#skills">Bash / Shell Scripting</a></li>
+            <li><a href="#skills">Markdown</a></li>
+            <li><a href="#skills">Jupyter Notebook</a></li>
+            <li><a href="#skills">VS Code</a></li>
+            <li><a href="#skills">Figma</a></li>
+            <li><a href="#skills">Notion / Obsidian</a></li>
+            <!--<li><a href="#skills">React / Vue / Svelte </a></li>
+            <li><a href="#skills">Node.js / Express</a></li>
+            <li><a href="#skills"> MongoDB / Firebase</a></li>
+            <li><a href="#skills">REST / GraphQL APIs </a></li>
+            <li><a href="#skills">Pytest / unittest </a></li>-->
+          </ul>
+        </div>
       </div>
     </section>
+
     <!-------------------------------Outside work/studies section------------------------------------------------>
     <section id="interest" data-aos="fade-up">
-      <h2>When I’m not coding.....</h2>
+      <h2>🎸 📸 📚 🏃🏼When I’m not coding.....</h2>
       <p>
-        you’ll find me playing guitar, studying and experimenting film
-        photography, or reading books about human psychology. These hobbies not
-        only help me relax but also inspire my creativity and problem-solving
-        skills in tech.
+        You’ll find me playing guitar, running, taking photos with my film
+        camera, or reading books about human psychology! These hobbies not only
+        help me relax but also always keep me up in the creative side,
+        constantly inspire my creativity and problem-solving skills in tech.
       </p>
-      <div class="pictures">
-        <div class="guitar">
+      <div class="pswp-gallery" id="my-gallery">
+        <a
+          href="media/film.jpg"
+          data-pswp-width="1200"
+          data-pswp-height="900"
+          data-pswp-caption="📸 Shooting film photos"
+          target="_blank"
+          class="item item1"
+        >
+          <img src="media/film.jpg" alt="Film" />
+        </a>
+        <a
+          href="media/guitar.jpg"
+          data-pswp-width="1200"
+          data-pswp-height="900"
+          data-pswp-caption="🎸 Playing guitar"
+          target="_blank"
+          class="item item2"
+        >
           <img src="media/guitar.jpg" alt="Guitar" />
-        </div>
-        <div class="film">
-          <img src="media/film.jpg" alt="Photography" />
-        </div>
-        <div class="books">
+        </a>
+
+        <a
+          href="media/books.jpg"
+          data-pswp-width="1200"
+          data-pswp-height="900"
+          data-pswp-caption="📚 Reading psychology books"
+          target="_blank"
+          class="item item3"
+        >
           <img src="media/books.jpg" alt="Books" />
-        </div>
+        </a>
+
+        <a
+          href="media/running.jpg"
+          data-pswp-width="1200"
+          data-pswp-height="900"
+          data-pswp-caption="🏃🏼 Going for runs"
+          target="_blank"
+          class="item item4"
+        >
+          <img src="media/running.jpg" alt="Running" />
+        </a>
       </div>
+
       <p>
         Besides, I am also very actively invovled in the Malaysian Cultural
         Society in UWA. As the President, I lead a team of 50 passionate
@@ -149,7 +219,7 @@
     <!-------------------------------Contact Section with formspree------------------------------------------------>
     <section id="contact" data-aos="fade-up">
       <h2>Contact Me 📩</h2>
-      <form action="https://formspree.io/f/yourformid" method="POST">
+      <form action="https://formspree.io/f/xldnkwzb" method="POST">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="_replyto" placeholder="Your Email" required />
         <textarea name="message" placeholder="Your Message" required></textarea>
@@ -203,5 +273,36 @@
         </div>
       </div>
     </footer>
+
+    <script type="module">
+      import PhotoSwipeLightbox from "https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.min.js";
+
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: "#my-gallery",
+        children: "a",
+        pswpModule: () =>
+          import("https://unpkg.com/photoswipe@5/dist/photoswipe.esm.min.js"),
+      });
+      lightbox.init();
+
+      //<!-------------------------------External Library Link------------------------------------------------>
+      window.onload = function () {
+        try {
+          TagCanvas.Start("myCanvas", "tags", {
+            textColour: "#ffffff",
+            outlineColour: "#00adb5",
+            reverse: true,
+            depth: 0.05,
+            maxSpeed: 0.05,
+            zoom: 1.2,
+            wheelZoom: false,
+            pinchZoom: false,
+          });
+        } catch (e) {
+          document.getElementById("myCanvasContainer").style.display = "none";
+          console.error("TagCanvas error:", e);
+        }
+      };
+    </script>
   </body>
 </html>
