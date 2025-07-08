@@ -69,6 +69,44 @@ Example usage:
 <canvas width="550" height="350" id="myCanvas">...</canvas>
 ```
 
+### 5. [PhotoSwipe](https://photoswipe.com)
+
+PhotoSwipe is a responsive JavaScript image gallery library that provides a full-screen lightbox experience with gestures and zoom support
+
+🛠 **Usage:**
+In my portfolio, PhotoSwipe is used to allow users to view project screenshots or event photos in a clean, interactive gallery. Besides, PhotoSwipe also supports mobile-friendly gestures such as swipe, pinch to zoom, which allow better accessibility when viewing photos.
+
+```html
+<a
+  href="media/Film/operahouse.jpg"
+  data-pswp-width="2319"
+  data-pswp-height="1536"
+>
+  <img src="media/Film/operahouse.jpg" alt="Opera House" />
+  <span class="pswp-caption-content"
+    >View on the ferry to Manly Beach, Sydney</span
+  >
+</a>
+```
+
+### 6. [SlickJS](https://kenwheeler.github.io/slick/)
+
+SlickJS is a feature-rich, fully responsive carousel/slider library that is good for showcasing images and other content in a dynamic, swipeable format.
+
+🛠 **Usage:**
+I use SlickJS to display event photos (e.g. club activities and cultural celebrations) in an elegant, swipeable carousel that support autoplay as well.
+
+Example usage:
+
+```html
+<div class="center">.....</div>
+<script>
+  $(".center").slick({
+      .....
+  });
+</script>
+```
+
 ## 📫 Contact
 
 If you have any feedback or suggestions, feel free to reach out at [tanzifung@gmail.com](mailto:tanzifung@gmail.com).
