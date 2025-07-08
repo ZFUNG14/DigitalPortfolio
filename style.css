@@ -162,6 +162,14 @@ h2, h3 {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+.github-link {
+  text-decoration: underline;
+  color: #00adb5;
+  text-decoration: underline;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
 /*<!-------------------------------Skill Section (tagcanvas)------------------------------------------------> */
 #myCanvasContainer {
   display: flex;
