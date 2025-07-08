@@ -43,6 +43,14 @@ document.getElementById('backToTop').addEventListener('click', function(e) {
   });
 });
 
+//Slick Slider for MCS photo slideshow
+$('.your-class').slick({
+  dots: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay:true
+});
 
 
 
