@@ -231,6 +231,10 @@ h2, h3 {
   gap: 16px;
 }
 
+.pswp__dynamic-caption {
+font-weight: bold;
+}
+
 
 /*<!-------------------------------Contact Section with Formspree------------------------------------------------> */
 form input, form textarea {
