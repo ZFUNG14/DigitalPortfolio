@@ -27,7 +27,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-//animation when travel back to About Me Section
+//animation when travel to About Me Section
 document.querySelector('.scroll-prompt').addEventListener('click', function(e) {
   e.preventDefault();
   document.querySelector('#about').scrollIntoView({ 
@@ -35,7 +35,7 @@ document.querySelector('.scroll-prompt').addEventListener('click', function(e) {
   });
 });
 
-//animation when travel back to Home Section 
+//animation when travel back to hero Section 
 document.getElementById('backToTop').addEventListener('click', function(e) {
   e.preventDefault();
   document.querySelector('#home').scrollIntoView({
@@ -43,19 +43,12 @@ document.getElementById('backToTop').addEventListener('click', function(e) {
   });
 });
 
-new Swiper('.mySwiper', {
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  }
+//Slick Slider for MCS photo slideshow
+$('.your-class').slick({
+  dots: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay:true
 });
-
-
-
-
 
