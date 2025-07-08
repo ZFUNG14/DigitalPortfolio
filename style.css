@@ -10,14 +10,7 @@ body {
   scroll-behavior: smooth;
 }
 
-section {
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-
-section {
+main section {
   padding: 80px 20px;
   max-width: 900px;
   margin: auto;
@@ -224,15 +217,18 @@ h2, h3 {
   font-weight: bold;
 }
 
-.your-class img {
+#extracurriculars .your-class img {
   width: 60%;
   height: auto;
   margin: 0 auto;
   display: block;
 }
+
 .your-class {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 16px;
 }
 
 
@@ -313,10 +309,6 @@ footer {
 .footer-right p {
   margin: 4px 0;
 }
-
-
-
-
 
 
 

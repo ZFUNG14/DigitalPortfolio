@@ -28,231 +28,404 @@
     <!-- Slick JS from CDN -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+    <!-- PhotoSwipe CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/photoswipe@5/dist/photoswipe.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/photoswipe-dynamic-caption-plugin@1.2.7/photoswipe-dynamic-caption-plugin.css"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <!-------------------------------Body Content------------------------------------------------>
   <body>
-    <!-------------------------------Main Hero Section with TypeScript------------------------------------------------>
-    <section class="hero" id="home">
-      <div class="intro-text" data-aos="fade-up">
-        <h1>Hello👋, I'm <span class="name">Zi Fung 🤓</span></h1>
-        <h2>I'm a <span id="typed"></span></h2>
-      </div>
-      <!-- 🔽 Scroll Prompt -->
-      <a href="#about" class="scroll-prompt"> Welcome </a>
-    </section>
-
-    <!-------------------------------About Section------------------------------------------------>
-    <section id="about" data-aos="fade-right">
-      <h2>About 👨🏼‍💻</h2>
-      <p>
-        Hi! My name is Zi Fung and I'm a final year Computer Science and Data
-        Science undergraduate at The University of Western Australia. I am
-        particularly passionate about building intelligent systems and solving
-        real-world problems with code and data. I love exploring machine
-        learning, backend development, and data visualization!
-      </p>
-
-      <!-------------------------------Photo Section------------------------------------------------>
-    </section>
-
-    <!-------------------------------Project Section------------------------------------------------>
-    <section id="projects" data-aos="zoom-in">
-      <h2 data-aos="fade-left">Projects 📁</h2>
-      <div class="project-card" data-aos="fade-left">
-        <h3>Mini Language Translator and Executor</h3>
-        <p>
-          Developed a C11-based translator and execution system for a custom
-          mini-language, converting “.ml” programs into C11 for compilation and
-          execution.
-        </p>
-        <a class = "github-link" href="https://github.com/username/resume-parser" target="_blank"
-          >View Code</a
-        >
-      </div>
-
-      <div class="project-card" data-aos="fade-right">
-        <h3>Electronic Medical Record System</h3>
-        <p>
-          Designed and implemented a Java-based Hospital Management System to
-          streamline patient management and administrative tasks.
-        </p>
-        <a class = "github-link" href="https://github.com/username/covid-dashboard" target="_blank"
-          >View Code</a
-        >
-      </div>
-
-      <div class="project-card" data-aos="fade-left">
-        <h3>Soul Maps</h3>
-        <p>
-          A personal media tracker and social sharing platform built with Flask
-        </p>
-        <a class = "github-link" href="https://github.com/username/stock-predictor" target="_blank"
-          >View Code</a
-        >
-      </div>
-
-      <div class="project-card" data-aos="fade-right">
-        <h3>Battleships: Engage in Explosive Rivalry (BEER)</h3>
-        <p>A networked multiplayer Battleship game built in Python</p>
-        <a class = "github-link" href="https://github.com/username/stock-predictor" target="_blank"
-          >View Code</a
-        >
-      </div>
-
-      <div class="project-card" data-aos="fade-left">
-        <h3>IoT Parking System in Smart City</h3>
-        <p>
-          Conducted research on an innovative IoT Parking System aimed at
-          enhancing urban mobility by utilising existing surveillance cameras as
-          IoT devices.
-        </p>
-        <a class = "github-link" href="https://github.com/username/stock-predictor" target="_blank"
-          >View Code</a
-        >
-      </div>
-    </section>
-
-    <!-------------------------------Skills Section------------------------------------------------>
-    <section id="skills" data-aos="fade-left">
-      <h2>Skills 🛠️</h2>
-      <p>A summary of the core tecnologies I work with daily:</p>
-      <div class="skill-section">
-        <div id="myCanvasContainer">
-          <canvas width="550" height="350" id="myCanvas">
-            <p>Canvas not supported.</p>
-          </canvas>
+    <main>
+      <!-------------------------------Main Hero Section with TypeScript------------------------------------------------>
+      <section class="hero" id="home">
+        <div class="intro-text" data-aos="fade-up">
+          <h1>Hello👋, I'm <span class="name">Zi Fung 🤓</span></h1>
+          <h2>I'm a <span id="typed"></span></h2>
         </div>
-        <div id="tags">
-          <ul>
-            <li><a href="#skills">Python</a></li>
-            <li><a href="#skills">Java</a></li>
-            <li><a href="#skills">C++</a></li>
-            <li><a href="#skills">JavaScript</a></li>
-            <li><a href="#skills">Neo4j</a></li>
-            <li><a href="#skills">Tableau</a></li>
-            <li><a href="#skills">C/C#</a></li>
-            <li><a href="#skills">HTML & CSS</a></li>
-            <li><a href="#skills">SQL</a></li>
-            <li><a href="#skills">NumPy & Pandas</a></li>
-            <li><a href="#skills">Flask</a></li>
-            <li><a href="#skills">Git & GitHub</a></li>
-            <li><a href="#skills">Docker</a></li>
-            <li><a href="#skills">R & Rstudio</a></li>
-            <li><a href="#skills">Bash / Shell Scripting</a></li>
-            <li><a href="#skills">Markdown</a></li>
-            <li><a href="#skills">Jupyter Notebook</a></li>
-            <li><a href="#skills">VS Code</a></li>
-            <li><a href="#skills">Figma</a></li>
-            <li><a href="#skills">Notion / Obsidian</a></li>
-            <!--<li><a href="#skills">React / Vue / Svelte </a></li>
+        <!-- 🔽 Scroll Prompt -->
+        <a href="#about" class="scroll-prompt"> Welcome </a>
+      </section>
+
+      <!-------------------------------About Section------------------------------------------------>
+      <section id="about" data-aos="fade-right">
+        <h2>About 👨🏼‍💻</h2>
+        <p>
+          Hi! My name is Zi Fung and I'm a final year Computer Science and Data
+          Science undergraduate at The University of Western Australia. I am
+          particularly passionate about building intelligent systems and solving
+          real-world problems with code and data. I love exploring machine
+          learning, backend development, and data visualization!
+        </p>
+
+        <!-------------------------------Photo Section------------------------------------------------>
+      </section>
+
+      <!-------------------------------Project Section------------------------------------------------>
+      <section id="projects" data-aos="zoom-in">
+        <h2 data-aos="fade-left">Projects 📁</h2>
+        <div class="project-card" data-aos="fade-left">
+          <h3>Mini Language Translator and Executor</h3>
+          <p>
+            Developed a C11-based translator and execution system for a custom
+            mini-language, converting “.ml” programs into C11 for compilation
+            and execution.
+          </p>
+          <a
+            class="github-link"
+            href="https://github.com/username/resume-parser"
+            target="_blank"
+            >View Code</a
+          >
+        </div>
+
+        <div class="project-card" data-aos="fade-right">
+          <h3>Electronic Medical Record System</h3>
+          <p>
+            Designed and implemented a Java-based Hospital Management System to
+            streamline patient management and administrative tasks.
+          </p>
+          <a
+            class="github-link"
+            href="https://github.com/username/covid-dashboard"
+            target="_blank"
+            >View Code</a
+          >
+        </div>
+
+        <div class="project-card" data-aos="fade-left">
+          <h3>Soul Maps</h3>
+          <p>
+            A personal media tracker and social sharing platform built with
+            Flask
+          </p>
+          <a
+            class="github-link"
+            href="https://github.com/username/stock-predictor"
+            target="_blank"
+            >View Code</a
+          >
+        </div>
+
+        <div class="project-card" data-aos="fade-right">
+          <h3>Battleships: Engage in Explosive Rivalry (BEER)</h3>
+          <p>A networked multiplayer Battleship game built in Python</p>
+          <a
+            class="github-link"
+            href="https://github.com/username/stock-predictor"
+            target="_blank"
+            >View Code</a
+          >
+        </div>
+
+        <div class="project-card" data-aos="fade-left">
+          <h3>IoT Parking System in Smart City</h3>
+          <p>
+            Conducted research on an innovative IoT Parking System aimed at
+            enhancing urban mobility by utilising existing surveillance cameras
+            as IoT devices.
+          </p>
+          <a
+            class="github-link"
+            href="https://github.com/username/stock-predictor"
+            target="_blank"
+            >View Code</a
+          >
+        </div>
+      </section>
+
+      <!-------------------------------Skills Section------------------------------------------------>
+      <section id="skills" data-aos="fade-left">
+        <h2>Skills 🛠️</h2>
+        <p>A summary of the core tecnologies I work with daily:</p>
+        <div class="skill-section">
+          <div id="myCanvasContainer">
+            <canvas width="550" height="350" id="myCanvas">
+              <p>Canvas not supported.</p>
+            </canvas>
+          </div>
+          <div id="tags">
+            <ul>
+              <li><a href="#skills">Python</a></li>
+              <li><a href="#skills">Java</a></li>
+              <li><a href="#skills">C++</a></li>
+              <li><a href="#skills">JavaScript</a></li>
+              <li><a href="#skills">Neo4j</a></li>
+              <li><a href="#skills">Tableau</a></li>
+              <li><a href="#skills">C/C#</a></li>
+              <li><a href="#skills">HTML & CSS</a></li>
+              <li><a href="#skills">SQL</a></li>
+              <li><a href="#skills">NumPy & Pandas</a></li>
+              <li><a href="#skills">Flask</a></li>
+              <li><a href="#skills">Git & GitHub</a></li>
+              <li><a href="#skills">Docker</a></li>
+              <li><a href="#skills">R & Rstudio</a></li>
+              <li><a href="#skills">Bash / Shell Scripting</a></li>
+              <li><a href="#skills">Markdown</a></li>
+              <li><a href="#skills">Jupyter Notebook</a></li>
+              <li><a href="#skills">VS Code</a></li>
+              <li><a href="#skills">Figma</a></li>
+              <li><a href="#skills">Notion / Obsidian</a></li>
+              <!--<li><a href="#skills">React / Vue / Svelte </a></li>
             <li><a href="#skills">Node.js / Express</a></li>
             <li><a href="#skills"> MongoDB / Firebase</a></li>
             <li><a href="#skills">REST / GraphQL APIs </a></li>
             <li><a href="#skills">Pytest / unittest </a></li>-->
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-------------------------------Outside work/studies section------------------------------------------------>
-    <section id="interest" data-aos="fade-up">
-      <h2>📸 🎸 When I’m not coding,</h2>
-      <p>
-      You'll find me shooting film or jamming on my guitar 🤘🏼 These hobbies certainly fuel my creativity and inspire new ways of thinking in tech. Here are some of my favourite photos taken with my Kodak KB10:</p>
-      <div class="my-gallery">
-        <!-- new method -->
+      <!-------------------------------Outside work/studies section------------------------------------------------>
+      <section id="interest" data-aos="fade-up">
+        <h2>📸 🎸 When I’m not coding,</h2>
+        <p>
+          You'll find me shooting film or jamming on my guitar 🤘🏼 These hobbies
+          certainly fuel my creativity and inspire new ways of thinking in tech.
+          Here are some of my favourite photos taken with my Kodak KB10:
+        </p>
+        <div class="my-gallery">
+          <div class="photo-collage" id="gallery">
+            <div class="first-column" data-aos="fade-right">
+              <a
+                href="media/Film/coogee.jpg"
+                data-pswp-width="1536"
+                data-pswp-height="2319"
+              >
+                <img src="media/Film/coogee.jpg" alt="Coogee Beach" />
+                <span class="pswp-caption-content"
+                  >Sunrise at Coogee Beach, Sydney</span
+                >
+              </a>
 
-        <div class="photo-collage">
-          <div class="first-column" data-aos="fade-right">
-          <img src="media/Film/coogee.jpg" alt="Film photo 1" />
-          <img src="media/Film/sabah.jpg" alt="Film photo 2" />
-          </div>
-          <div class="second-column" data-aos="fade-up">
-          <img src="media/Film/operahouse.jpg" alt="Film photo 3" />
-          <img src="media/Film/KL.jpg" alt="Film photo 4" />
-          </div>
-          <div class="last-column" data-aos="fade-left">
-            <img src="media/Film/Ttemple.jpg" alt="Film photo 5" />
-            <img src="media/Film/rawang.jpg" alt="Film photo 6" />
-            <img src="media/Film/Mtemple1.jpg" alt="Film photo 7" />
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section  id="extracurriculars">
-    <div data-aos="fade-up-left">
-      <h2 >🇲🇾 Besides,</h2 >
-      <p >
-        I am also actively involved in the <a class = "links" href="https://www.uwastudentguild.com/clubs/malaysian-cultural-society">Malaysian Cultural Society</a> at UWA. As President, I have the privilege of leading a team of 50 passionate individuals in organizing cultural events for 300+ people as well as promoting Malaysian heritage on campus. 
-        Through events such as food fairs and community picnics, we aim to foster a strong sense of belonging among Malaysians in Western Australia and provide support whenever needed.
-      </p>
-    </div>
-      <div data-aos="fade-up-right">
-            <div class="your-class" >
-        <div>
-          <img src="media/MCS media/picnic.JPG" alt="Picnic event 2025" />
-        </div>
-        <div>
-          <img src="media/MCS media/picnic2.JPG" alt="Picnic event 2025" />
-        </div>
-        <div>
-          <img
-            src="media/MCS media/MnG.JPG"
-            alt="Meet N Greet event 2025 Group Photo with members and committee "
-          />
-        </div>
-        <div>
-          <img
-            src="media/MCS media/riaraya.JPEG"
-            alt="Hari Raya Celebration Event "
-          />
-        </div>
-                <div>
-          <img
-            src="media/MCS media/raya.JPG"
-            alt="Hari Raya Celebration Event Crowd "
-          />
-        </div>
-        <div>
-          <img
-            src="media/MCS media/sports.JPG"
-            alt="MCS Team 2025 "
-          />
-        </div>
-        <div>
-          <img
-            src="media/MCS media/team.JPG"
-            alt="MCS Team 2025 "
-          />
-        </div>
-      </div>
-      <p>
-        Through this role, I get to experienced working with all kinds people from all walks of life, which had have strengthen my leadership and
-        communication skills. I am proud to be part of a community that celebrates our heritage and brings people together through cultural events.
-      </p>
-      </div>
-    </section>
+              <a
+                href="media/Film/sabah.JPG"
+                data-pswp-width="2317"
+                data-pswp-height="1536"
+              >
+                <img src="media/Film/sabah.jpg" alt="Sabah" />
+                <span class="pswp-caption-content"
+                  >Hotel that I stayed in Sabah, Malaysia</span
+                >
+              </a>
+            </div>
+            <div class="second-column" data-aos="fade-up">
+              <a
+                href="media/Film/operahouse.jpg"
+                data-pswp-width="2319"
+                data-pswp-height="1536"
+              >
+                <img src="media/Film/operahouse.jpg" alt="Opera House" />
+                <span class="pswp-caption-content"
+                  >View on the ferry to Manly Beach, Sydney</span
+                >
+              </a>
+              <a
+                href="media/Film/KL.jpg"
+                data-pswp-width="1536"
+                data-pswp-height="2317"
+              >
+                <img src="media/Film/KL.jpg" alt="Film photo 4" />
+                <span class="pswp-caption-content"
+                  >Cafe crawl in the heart of Kuala Lumpur</span
+                >
+              </a>
+            </div>
 
-    <!-------------------------------Contact Section with formspree------------------------------------------------>
-    <section id="contact" data-aos="fade-up">
-      <h2>Contact Me 📩</h2>
-      <form action="https://formspree.io/f/xldnkwzb" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="_replyto" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-    <a
-      href="#home"
-      id="backToTop"
-      class="back-to-top hidden"
-      title="Return to Top"
-      >⬆</a
-    >
-    <!-------------------------------Footer and Contact Me------------------------------------------------>
+            <div class="last-column" data-aos="fade-left">
+              <a
+                href="media/Film/Ttemple.jpg"
+                data-pswp-width="2317"
+                data-pswp-height="1536"
+              >
+                <img src="media/Film/Ttemple.jpg" alt="Film photo 5" />
+                <span class="pswp-caption-content"
+                  >A temple that I visited in Bangkok, Thailand</span
+                >
+              </a>
+              <a
+                href="media/Film/rawang.jpg"
+                data-pswp-width="2317"
+                data-pswp-height="1536"
+              >
+                <img src="media/Film/rawang.jpg" alt="Film photo 6" />
+                <span class="pswp-caption-content"
+                  >Weekend hike at Rawang ByPass, Malaysia</span
+                >
+              </a>
+              <a
+                href="media/Film/Mtemple1.jpg"
+                data-pswp-width="2317"
+                data-pswp-height="1536"
+              >
+                <img src="media/Film/Mtemple1.jpg" alt="Film photo 7" />
+                <span class="pswp-caption-content"
+                  >Tian Hou Gong Temple in Kuala Lumpur, Malaysia</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------------Extracurriculars section------------------------------------------------>
+
+      <section id="extracurriculars">
+        <div data-aos="fade-up-left">
+          <h2>🇲🇾 Besides,</h2>
+          <p>
+            I am also actively involved in the
+            <a
+              class="links"
+              href="https://www.uwastudentguild.com/clubs/malaysian-cultural-society"
+              >Malaysian Cultural Society</a
+            >
+            at UWA. As President, I have the privilege of leading a team of 50
+            passionate individuals in organizing cultural events for 300+ people
+            as well as promoting Malaysian heritage on campus. Through events
+            such as food fairs and community picnics, we aim to foster a strong
+            sense of belonging among Malaysians in Western Australia and provide
+            support whenever needed.
+          </p>
+        </div>
+        <div data-aos="fade-up-right">
+          <div id="mcs-gallery" class="your-class">
+            <div>
+              <a
+                href="media/MCS media/picnic.JPG"
+                data-pswp-width="2304"
+                data-pswp-height="1536"
+              >
+                <img src="media/MCS media/picnic.JPG" alt="Picnic event 2025" />
+                <span class="pswp-caption-content"
+                  >First event of the year</span
+                >
+              </a>
+            </div>
+            <div>
+              <a
+                href="media/MCS media/picnic2.JPG"
+                data-pswp-width="2048"
+                data-pswp-height="1365"
+              >
+                <img
+                  src="media/MCS media/picnic2.JPG"
+                  alt="Picnic event 2025"
+                />
+                <span class="pswp-caption-content"
+                  >Picnic moments with attendees</span
+                >
+              </a>
+            </div>
+            <div>
+              <a
+                href="media/MCS media/MnG.JPG"
+                data-pswp-width="2048"
+                data-pswp-height="1428"
+              >
+                <img
+                  src="media/MCS media/MnG.JPG"
+                  alt="Meet N Greet event 2025"
+                />
+                <span class="pswp-caption-content"
+                  >Meet & Greet 2025 group photo</span
+                >
+              </a>
+            </div>
+            <div>
+              <a
+                href="media/MCS media/riaraya.JPEG"
+                data-pswp-width="2304"
+                data-pswp-height="1536"
+              >
+                <img src="media/MCS media/riaraya.JPEG" alt="Hari Raya Event" />
+                <span class="pswp-caption-content"
+                  >Hari Raya cultural celebration</span
+                >
+              </a>
+            </div>
+            <div>
+              <a
+                href="media/MCS media/raya.JPG"
+                data-pswp-width="2048"
+                data-pswp-height="1366"
+              >
+                <img src="media/MCS media/raya.JPG" alt="Raya Event Crowd" />
+                <span class="pswp-caption-content"
+                  >Crowd enjoying Hari Raya event</span
+                >
+              </a>
+            </div>
+            <div>
+              <a
+                href="media/MCS media/sports.JPG"
+                data-pswp-width="2048"
+                data-pswp-height="1365"
+              >
+                <img src="media/MCS media/sports.JPG" alt="MCS Sports Team" />
+                <span class="pswp-caption-content"
+                  >Sports day with the MCS team</span
+                >
+              </a>
+            </div>
+            <div>
+              <a
+                href="media/MCS media/team.JPG"
+                data-pswp-width="5120"
+                data-pswp-height="3414"
+              >
+                <img src="media/MCS media/team.JPG" alt="MCS Committee" />
+                <span class="pswp-caption-content"
+                  >MCS Committee Group 2025</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <p>
+            Through this role, I get to experience working with all kinds of
+            people from all walks of life, which has strengthened my leadership
+            and communication skills. I am proud to be part of a community that
+            celebrates our heritage and brings people together through cultural
+            events.
+          </p>
+        </div>
+      </section>
+
+      <!-------------------------------Contact Section with formspree------------------------------------------------>
+      <section id="contact" data-aos="fade-up">
+        <h2>Contact Me 📩</h2>
+        <form action="https://formspree.io/f/xldnkwzb" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input
+            type="email"
+            name="_replyto"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      <a
+        href="#home"
+        id="backToTop"
+        class="back-to-top hidden"
+        title="Return to Top"
+        >⬆</a
+      >
+    </main>
+    <!-------------------------------Footer and Contact Details------------------------------------------------>
     <footer>
       <div class="footer-container">
         <div class="footer-left">
@@ -278,6 +451,7 @@
         </div>
       </div>
     </footer>
+
     <!-------------------------------External Library Link------------------------------------------------>
     <!-- AOS CSS -->
     <link
@@ -299,8 +473,29 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
 
-
     <script type="module">
+      //<!-------------------------------PhotoSwipe For fullscreen photo ------------------------------------------------>
+      import PhotoSwipeLightbox from "https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.min.js";
+      import PhotoSwipe from "https://unpkg.com/photoswipe@5/dist/photoswipe.esm.min.js";
+      import DynamicCaption from "https://cdn.jsdelivr.net/npm/photoswipe-dynamic-caption-plugin@1.2.7/photoswipe-dynamic-caption-plugin.esm.min.js";
+
+      // PhotoSwipe for film gallery
+      const filmLightbox = new PhotoSwipeLightbox({
+        gallery: "#gallery",
+        children: "a",
+        pswpModule: PhotoSwipe,
+      });
+      new DynamicCaption(filmLightbox, { type: "auto" });
+      filmLightbox.init();
+
+      // PhotoSwipe for MCS gallery
+      const mcsLightbox = new PhotoSwipeLightbox({
+        gallery: "#mcs-gallery",
+        children: "a",
+        pswpModule: PhotoSwipe,
+      });
+      new DynamicCaption(mcsLightbox, { type: "auto" });
+      mcsLightbox.init();
 
       //<!-------------------------------Tag Canvas code for skill section ------------------------------------------------>
       window.onload = function () {
