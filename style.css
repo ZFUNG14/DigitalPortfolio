@@ -243,7 +243,6 @@ p {
   font-size: 18px;
   line-height: 1.4;
   color: #00adb5;
-  text-decoration: underline;;
   padding: 12px;
 }
 
@@ -278,10 +277,6 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
-}
-
-.pswp__dynamic-caption {
-font-weight: bold;
 }
 
 
