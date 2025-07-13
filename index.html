@@ -38,6 +38,12 @@
       href="https://cdn.jsdelivr.net/npm/photoswipe-dynamic-caption-plugin@1.2.7/photoswipe-dynamic-caption-plugin.css"
     />
 
+    <!-- Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <!-------------------------------Body Content------------------------------------------------>
@@ -54,89 +60,262 @@
       </section>
 
       <!-------------------------------About Section------------------------------------------------>
-      <section id="about" data-aos="fade-right">
-        <h2>About 👨🏼‍💻</h2>
-        <p>
-          Hi! My name is Zi Fung and I'm a final year Computer Science and Data
-          Science undergraduate at The University of Western Australia. I am
-          particularly passionate about building intelligent systems and solving
-          real-world problems with code and data. I love exploring machine
-          learning, backend development, and data visualization!
-        </p>
-
-        <!-------------------------------Photo Section------------------------------------------------>
+      <section id="about">
+        <h2 data-aos="fade-right">About 👨🏼‍💻</h2>
+        <div class="about-container">
+          <div class="about-photo" data-aos="fade-right">
+            <img src="media/ZF.JPG" alt="Zi Fung's photo" class="mugshot" />
+          </div>
+          <div class="about-text" data-aos="fade-left">
+            <p>
+              Hi! My name is Zi Fung and I'm a final year Computer Science and
+              Data Science undergraduate at The University of Western Australia.
+              I am particularly passionate about full-stack development and
+              solving real-world problems with code and data.
+            </p>
+            <p>
+              I'm currently seeking internship or graduate program opportunities
+              where I can contribute, learn, and grow as a developer. You may
+              find my contact details at the bottom of this page.
+            </p>
+          </div>
+        </div>
       </section>
 
       <!-------------------------------Project Section------------------------------------------------>
-      <section id="projects" data-aos="zoom-in">
-        <h2 data-aos="fade-left">Projects 📁</h2>
-        <div class="project-card" data-aos="fade-left">
-          <h3>Mini Language Translator and Executor</h3>
-          <p>
-            Developed a C11-based translator and execution system for a custom
-            mini-language, converting “.ml” programs into C11 for compilation
-            and execution.
-          </p>
-          <a
-            class="github-link"
-            href="https://github.com/username/resume-parser"
-            target="_blank"
-            >View Code</a
-          >
+      <section id="projects">
+        <div data-aos="fade-left">
+          <h2>Projects 📁</h2>
+          <div class="project-card">
+            <h3>🗺️  Soul Maps</h3>
+            <p>
+              A personal media tracker and social sharing platform built with
+              Flask. Track what you read, watch, and listen to and turn it into
+              personalized insights. Soul Maps lets you log books, movies, TV
+              shows, and music, and view your media consumption through dynamic
+              charts and timelines. Add friends, share your media snapshots, and
+              discover new favorites through social sharing.
+              <ul>
+                <li>
+                  ✅ Built with modular Flask architecture
+                </li>
+                <li>
+                  📊 Features personalized dashboards powered by Chart.js
+                </li>
+                <li>
+                  🔐 User authentication, friend system, and activity tracking
+                </li>
+                <li>
+                  🧪 Tested with Pytest and Selenium for reliability
+                </li>
+              </ul>
+            </p>
+            <a
+              class="github-link"
+              href="https://github.com/fudgeg/SoulMaps"
+              target="_blank"
+              >More</a
+            >
+          </div>
         </div>
 
-        <div class="project-card" data-aos="fade-right">
-          <h3>Electronic Medical Record System</h3>
-          <p>
-            Designed and implemented a Java-based Hospital Management System to
-            streamline patient management and administrative tasks.
-          </p>
-          <a
-            class="github-link"
-            href="https://github.com/username/covid-dashboard"
-            target="_blank"
-            >View Code</a
-          >
+        <div data-aos="fade-right">
+          <div class="project-card" >
+            <h3>📢  Digital Portfolio</h3>
+
+            <p>
+              A responsive, single-page portfolio site built using HTML, CSS, and JavaScript.
+              The site architecture is modular and fully client-side, leveraging several external
+              libraries to enable dynamic effects and a smooth user experience. 
+            </p>
+            <ul>
+              <li>📈 AOS, Typed.js, SlickJS, TagCanvas, and PhotoSwipe integrations</li>
+              <li>📬 Formspree-based contact system (no backend)</li>
+              <li>⚙️ Fully responsive and accessible, optimized for performance</li>
+            </ul>
+            <a
+              class="github-link"
+              href="https://github.com/ZFUNG14/DigitalPortfolio"
+              target="_blank"
+              >More</a
+            >
+          </div>
         </div>
 
-        <div class="project-card" data-aos="fade-left">
-          <h3>Soul Maps</h3>
-          <p>
-            A personal media tracker and social sharing platform built with
-            Flask
-          </p>
-          <a
-            class="github-link"
-            href="https://github.com/username/stock-predictor"
-            target="_blank"
-            >View Code</a
-          >
+        <div  data-aos="fade-left">
+          <div class="project-card">
+            <h3>🏥  Medix: Electronic Medical Record System</h3>
+            <p>
+              A fully functional desktop-based EMR system built in Java. 
+              Medix simulates real-world hospital workflows, enabling role-based
+              access for doctors, staff, and patients. It offers complete patient 
+              lifecycle tracking, from diagnosis and lab testing to prescriptions 
+              and treatment management, all without an external database.
+            </p>
+              <ul>
+                <li>✅ Built with Java, JavaFX, and custom object serialization</li>
+                <li>🗂️ Modular MVC design for maintainability and scalability</li>
+                <li>👨‍⚕️ Role-based access for doctors, patients, and medical staff</li>
+                <li>🧪 Supports lab test logic (CBC, Drug, Urinalysis) with auto-interpretation</li>
+                <li>💾 Uses file-based persistence to mimic database functionality</li>
+              </ul>
+            <a
+              class="github-link"
+              href="https://github.com/ZFUNG14/Medix"
+              target="_blank"
+              >More</a
+            >
+          </div>
         </div>
 
-        <div class="project-card" data-aos="fade-right">
-          <h3>Battleships: Engage in Explosive Rivalry (BEER)</h3>
-          <p>A networked multiplayer Battleship game built in Python</p>
-          <a
-            class="github-link"
-            href="https://github.com/username/stock-predictor"
-            target="_blank"
-            >View Code</a
-          >
+        <div data-aos="fade-right">
+          <div class="project-card">
+            <h3>📠  runml (C Mini-Language Transpiler)</h3>
+            <p>
+              A command-line utility written in C11 that compiles and executes programs
+              written in a custom-designed mini-language (.ml). Runml transpiles high-level .ml source code into C11, compiles 
+              the result, and executes the output, all within a single utility. 
+            </p>
+            <ul>
+              <li>⚙️ Written in standard C11 with POSIX system calls (no third-party dependencies)</li>
+              <li>🔁 End-to-end execution: transpilation ➝ compilation ➝ execution ➝ cleanup</li>
+              <li>💻 Demonstrates low-level systems knowledge: process management, I/O, and compilation automation</li>
+            </ul>
+            <a
+              class="github-link"
+              href="https://github.com/ZFUNG14/runML"
+              target="_blank"
+              >More</a
+            >
+          </div>
         </div>
 
-        <div class="project-card" data-aos="fade-left">
-          <h3>IoT Parking System in Smart City</h3>
-          <p>
-            Conducted research on an innovative IoT Parking System aimed at
-            enhancing urban mobility by utilising existing surveillance cameras
-            as IoT devices.
-          </p>
-          <a
-            class="github-link"
-            href="https://github.com/username/stock-predictor"
-            target="_blank"
-            >View Code</a
-          >
+        <div data-aos="fade-left">
+          <div class="project-card">
+            <h3>🎧  Spotify Advanced Playback Control Plugin</h3>
+
+            <p>
+              Currently developing a Spotify plugin designed to enhance
+              playback control through automated actions. Inspired by my 
+              daily use of Spotify, I wanted to achieve more flexibility 
+              and precision in how playback is managed within the app.
+            </p>
+            <p>
+              With this plugin, users gain greater control over their listening 
+              experience. No matter it’s automatically adding specific songs based 
+              on what’s currently playing, or managing the queue with more customisation 
+              and ease.
+            </p>
+            <a
+              class="github-link"
+              href="https://github.com/ZFUNG14/SpotifyAdvancedPlayback"
+              target="_blank"
+              >More</a
+            >
+          </div>
+        </div>
+
+        <div data-aos="fade-right">
+          <div class="project-card">
+            <h3>👶🏼  Low Birth Weight Predictor</h3>
+            <p>
+            A statistical modeling project aimed at identifying maternal 
+            risk factors associated with low birth weight in newborns. This 
+            analysis was completed using R for an applied statistics assignment 
+            . The final logistic regression model 
+            incorporated interactions and was refined using AIC-based stepwise selection.
+            </p>
+            <ul>
+              <li> 📊 Built using logistic regression and interaction modeling</li>
+              <li> 📉 AIC-driven model refinement with stepAIC() from MASS package</li>
+              <li> 👩‍⚕️ Analyzed maternal factors: age, weight, smoking, hypertension, etc.</li>
+              <li> 🔍 Visualized trends and residuals for diagnostics and insights</li>
+            </ul>
+            <a
+              class="github-link"
+              href="https://github.com/ZFUNG14/LowBirthWeightwithLogisticRegression"
+              target="_blank"
+              >More</a
+            >
+          </div>
+        </div>
+
+        <div data-aos="fade-left">
+          <div class="project-card">
+            <h3>💊 Modeling Doctor Complaints with Zero-Inflated Negative Binomial Regression</h3>
+            <p>
+              A statistical modeling project analyzing doctor 
+              complaints in emergency services using advanced 
+              count regression methods. In this project, I used
+               Zero-Inflated Negative Binomial (ZINB) modeling to
+                handle overdispersed and zero-inflated count data.
+                The model uncovered how workload, income, and gender/residency
+                interactions affect complaint frequency.
+            </p>
+            <ul>
+              <li> 📊 Modeled overdispersed count data using Poisson, Negative Binomial, ZIP, and ZINB approaches</li>
+              <li> 🧠 Applied Zero-Inflated Negative Binomial with interaction terms as final model</li>
+              <li> 🧪 Performed residual diagnostics, AIC comparison, and visual model checks</li>
+            </ul>
+            <a
+              class="github-link"
+              href="https://github.com/ZFUNG14/ZINBModeling"
+              target="_blank"
+              >More</a
+            >
+          </div>
+        </div>
+
+        <div data-aos="fade-right">
+          <div class="project-card">
+            <h3>🚦 Data Warehouse Design and Implementation for Road Safety Analytics</h3>
+              <p>
+              
+              A real-world data warehousing and analytics project built to support 
+              government decision-making on road safety in Australia. The project 
+              involved designing and implementing a dimensional model, building a 
+              PostgreSQL-based data warehouse, and generating interactive insights 
+              using Power BI and association rule mining in Python.
+           </p>
+           <ul>
+              <li> 🧱 Designed a star schema with 8+ dimensions and a central fact table for fatal crash events </li>
+              <li> 📊 Built dynamic dashboards in Power BI to visualize regional crash patterns and trends</li>
+              <li>🧼 Implemented robust ETL with Pandas to clean, transform, and load real-world datasets</li>
+              <li>🔍 Applied association rule mining to uncover high-risk patterns among road user groups</li>
+              <li>🧠 Proposed data-driven safety recommendations for policymakers based on mined insights</li>
+            </ul>
+            <a
+              class="github-link"
+              href="https://github.com/ZFUNG14/DataWarehouseDesign"
+              target="_blank"
+              >More</a
+            >
+          </div>
+        </div>
+
+        <div data-aos="fade-left">
+          <div class="project-card">
+            <h3>🧩 Graph Database: Road Crash Graph Insights (Neo4j)</h3>
+            <p>
+              A property graph database project focused on fatal road crashes in Australia.
+              Using Neo4j and Cypher query, my report captures complex interactions among 
+              crashes, people, vehicles, and locations to reveal actionable insights using graph 
+              traversal and pattern matching.
+              </p>
+              <ul>
+                <li> 🧠 Designed a normalized property graph using Arrows App to model crash networks </li>
+                <li> 🛠️ Performed ETL from tabular data to CSV node/edge files for Neo4j ingestion </li>
+                <li> 🔍 Executed Cypher queries to extract patterns by time, vehicle type, gender, and geography </li>
+                <li> 📈 Explored advanced queries like multi-hop paths and peak-hour regional analysis</li>
+                <li> 🌐 Investigated real-world applications of graph data science in road safety</li>
+              </ul>
+            <a
+              class="github-link"
+              href="https://github.com/ZFUNG14/GraphDBandCypherQuery"
+              target="_blank"
+              >More</a
+            >
+          </div>
         </div>
       </section>
 
@@ -177,6 +356,8 @@
             <li><a href="#skills"> MongoDB / Firebase</a></li>
             <li><a href="#skills">REST / GraphQL APIs </a></li>
             <li><a href="#skills">Pytest / unittest </a></li>-->
+            <!--Still learning this, will uncomment when i think i mastered-->
+
             </ul>
           </div>
         </div>
@@ -184,10 +365,10 @@
 
       <!-------------------------------Outside work/studies section------------------------------------------------>
       <section id="interest" data-aos="fade-up">
-        <h2>📸 🎸 When I’m not coding,</h2>
+        <h2>📸 When I’m not coding,</h2>
         <p>
-          You'll find me shooting film or jamming on my guitar 🤘🏼 These hobbies
-          certainly fuel my creativity and inspire new ways of thinking in tech.
+          You'll find me shooting film! This hobbies
+          keep my creativity flowing and inspire new ways of thinking in tech.
           Here are some of my favourite photos taken with my Kodak KB10:
         </p>
         <div class="my-gallery">
@@ -198,10 +379,7 @@
                 data-pswp-width="1536"
                 data-pswp-height="2319"
               >
-                <img src="media/Film/coogee.jpg" alt="Coogee Beach" />
-                <span class="pswp-caption-content"
-                  >Sunrise at Coogee Beach, Sydney</span
-                >
+                <img src="media/Film/coogee.jpg"/>
               </a>
 
               <a
@@ -209,10 +387,7 @@
                 data-pswp-width="2317"
                 data-pswp-height="1536"
               >
-                <img src="media/Film/sabah.jpg" alt="Sabah" />
-                <span class="pswp-caption-content"
-                  >Hotel that I stayed in Sabah, Malaysia</span
-                >
+                <img src="media/Film/sabah.jpg" />
               </a>
             </div>
             <div class="second-column" data-aos="fade-up">
@@ -221,20 +396,14 @@
                 data-pswp-width="2319"
                 data-pswp-height="1536"
               >
-                <img src="media/Film/operahouse.jpg" alt="Opera House" />
-                <span class="pswp-caption-content"
-                  >View on the ferry to Manly Beach, Sydney</span
-                >
+                <img src="media/Film/operahouse.jpg"/>
               </a>
               <a
                 href="media/Film/KL.jpg"
                 data-pswp-width="1536"
                 data-pswp-height="2317"
               >
-                <img src="media/Film/KL.jpg" alt="Film photo 4" />
-                <span class="pswp-caption-content"
-                  >Cafe crawl in the heart of Kuala Lumpur</span
-                >
+                <img src="media/Film/KL.jpg"/>
               </a>
             </div>
 
@@ -244,30 +413,21 @@
                 data-pswp-width="2317"
                 data-pswp-height="1536"
               >
-                <img src="media/Film/Ttemple.jpg" alt="Film photo 5" />
-                <span class="pswp-caption-content"
-                  >A temple that I visited in Bangkok, Thailand</span
-                >
+                <img src="media/Film/Ttemple.jpg" />
               </a>
               <a
                 href="media/Film/rawang.jpg"
                 data-pswp-width="2317"
                 data-pswp-height="1536"
               >
-                <img src="media/Film/rawang.jpg" alt="Film photo 6" />
-                <span class="pswp-caption-content"
-                  >Weekend hike at Rawang ByPass, Malaysia</span
-                >
+                <img src="media/Film/rawang.jpg"/>
               </a>
               <a
                 href="media/Film/Mtemple1.jpg"
                 data-pswp-width="2317"
                 data-pswp-height="1536"
               >
-                <img src="media/Film/Mtemple1.jpg" alt="Film photo 7" />
-                <span class="pswp-caption-content"
-                  >Tian Hou Gong Temple in Kuala Lumpur, Malaysia</span
-                >
+                <img src="media/Film/Mtemple1.jpg" />
               </a>
             </div>
           </div>
@@ -278,7 +438,7 @@
 
       <section id="extracurriculars">
         <div data-aos="fade-up-left">
-          <h2>🇲🇾 Besides,</h2>
+          <h2>🇲🇾 Studies aside,</h2>
           <p>
             I am also actively involved in the
             <a
@@ -304,7 +464,12 @@
               >
                 <img src="media/MCS media/picnic.JPG" alt="Picnic event 2025" />
                 <span class="pswp-caption-content"
-                  >First event of the year</span
+                  ><div class = "caption-container"><h3 class = "captionHeading">Welcome Picnic 2025</h3><p class = "caption"> 
+                    We kicked off the year with a picnic event at Matilda Bay. At the bayside, it was perfect for meeting new faces 
+                    and catching up with old ones after the summer break. Everyone brought something to share (lots of good food!), 
+                    and the vibes were wholesome all around. We hung out, exchange stories, and watched the sunset together. There couldn't be  
+                    a better way to start the year.
+                  </p></div></span
                 >
               </a>
             </div>
@@ -319,7 +484,13 @@
                   alt="Picnic event 2025"
                 />
                 <span class="pswp-caption-content"
-                  >Picnic moments with attendees</span
+                  ><div class = "caption-container"><h3 class = "captionHeading">Welcome Picnic 2025 Pt. 2</h3><p class = "caption">
+                    This was not just the first event of the year for the club, it was also my first as President, which made it all more exciting 
+                    (and nerve-wracking). I wasn’t sure what to expect, but with an incredible team behind me, everything came together smoothly and we 
+                    kicked off the year with a bang! Looking around at the crowd that day, I had a feeling that 
+                    this is going to be a great year for the club. It was one of those moments where all the late nights and prep work 
+                    felt worth it, and I couldn’t have asked for a better start.
+                </p></div></span
                 >
               </a>
             </div>
@@ -334,19 +505,14 @@
                   alt="Meet N Greet event 2025"
                 />
                 <span class="pswp-caption-content"
-                  >Meet & Greet 2025 group photo</span
-                >
-              </a>
-            </div>
-            <div>
-              <a
-                href="media/MCS media/riaraya.JPEG"
-                data-pswp-width="2304"
-                data-pswp-height="1536"
-              >
-                <img src="media/MCS media/riaraya.JPEG" alt="Hari Raya Event" />
-                <span class="pswp-caption-content"
-                  >Hari Raya cultural celebration</span
+                  ><div class = "caption-container"><h3 class = "captionHeading">Meet & Greet 2025</h3><p class = "caption">
+                    Meet & Greet is one of our signature events each semester. It is a relaxed and welcoming space where new and 
+                    returning members can come together, connect, and get a feel for what MCS is all about.
+                    It’s also a great opportunity to meet the committee, hear about upcoming events, and ease into the semester with some 
+                    lighthearted games and icebreakers. Whether they're brand new or already part of the crew, there’s always someone
+                    new to talk to and something fun to join in on.
+                    At its core, it’s all about community, which is what MCS is all about.
+                  </p></div></span
                 >
               </a>
             </div>
@@ -358,7 +524,30 @@
               >
                 <img src="media/MCS media/raya.JPG" alt="Raya Event Crowd" />
                 <span class="pswp-caption-content"
-                  >Crowd enjoying Hari Raya event</span
+                  ><div class = "caption-container"><h3 class = "captionHeading">Ria Raya!</h3><p class = "caption">
+                  Ria Raya is argueably hands-down the biggest event the club has ever hosted since the creation of the club, 
+                  and one we’re incredibly proud when looking back to. It is our way of celebrating the richness of Malaysian culture, 
+                  with a special focus on the traditions surrounding Hari Raya. The evening comes alive with food trucks serving up all-time
+                  Malaysian favourites, from satay to nasi lemak. We also feature traditional games like congkak and batu seremban, 
+                  as well as cultural performances such as silat demonstrations and Malay dance.
+                  It’s a vibrant celebration that brings people together no matter the nationalities, to share in the food, fun, and festive spirit.</p></div></span
+                >
+              </a>
+            </div>
+            <div>
+              <a
+                href="media/MCS media/riaraya.JPEG"
+                data-pswp-width="2304"
+                data-pswp-height="1536"
+              >
+                <img src="media/MCS media/riaraya.JPEG" alt="Hari Raya Event" />
+                <span class="pswp-caption-content"
+                  ><div class = "caption-container"><h3 class = "captionHeading">The Team behind Ria Raya!</h3><p class = "caption">
+                  This amazing group is the heart and driving force behind Ria Raya. From the black jerseys representing MCS UWA and the blue shirts 
+                  from AMS Curtin. This event was a joint collaboration between two university clubs, working closely to make it happen.
+                  It took a lot of effort to bring everything together, and I’m incredibly grateful for the chance to lead such a 
+                  passionate and dedicated team. Organising the club’s biggest event with this group of amazing people made the entire 
+                  experience truly unforgettable.</p></div></span
                 >
               </a>
             </div>
@@ -370,7 +559,12 @@
               >
                 <img src="media/MCS media/sports.JPG" alt="MCS Sports Team" />
                 <span class="pswp-caption-content"
-                  >Sports day with the MCS team</span
+                  ><div class = "caption-container"><h3 class = "captionHeading">Sports Event</h3><p class = "caption">
+                  Other than cultural celebrations and social gatherings, MCS also organises casual sports events to help members 
+                  unwind and have fun outside of academics. We understand that uni life can get overwhelming at times, thus we’re always looking 
+                  for ways to create space for people to de-stress and connect. This photo was taken during one of our Captain Ball sessions, 
+                  which brought out lots of energy and friendly competition. We've also hosted other sports like badminton, frisbee, and soccer, 
+                  all focused on having a good time together. </p></div></span
                 >
               </a>
             </div>
@@ -382,8 +576,12 @@
               >
                 <img src="media/MCS media/team.JPG" alt="MCS Committee" />
                 <span class="pswp-caption-content"
-                  >MCS Committee Group 2025</span
-                >
+                  ><div class = "caption-container"><h3 class = "captionHeading">MCS Committee 2025</h3><p class = "caption">
+                  Lastly, the people behind the Malaysian Cultural Society 2025. Not everyone could make it for this photo 
+                  due to study and other commitments, but this group represents the heart of the committee. I feel incredibly grateful to have 
+                  worked alongside such dedicated, passionate individuals. None of what we achieved this year would have been possible 
+                  without each of them. It’s been a real privilege to grow, lead, and create memories together. </p></span
+                ></div>
               </a>
             </div>
           </div>

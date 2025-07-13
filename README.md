@@ -107,6 +107,10 @@ Example usage:
 </script>
 ```
 
+## 🤖 Acknowledgement of AI Usage
+
+While building this website, I used generative AI tools like ChatGPT and Copilot to assist with tasks such as fixing bugs and refining styles. However, the core concept and overall design were entirely my own.
+
 ## 📫 Contact
 
 If you have any feedback or suggestions, feel free to reach out at [tanzifung@gmail.com](mailto:tanzifung@gmail.com).
