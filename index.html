@@ -39,10 +39,8 @@
     />
 
     <!-- Google Font-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@700&display=swap">
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -51,11 +49,14 @@
     <main>
       <!-------------------------------Main Hero Section with TypeScript------------------------------------------------>
       <section class="hero" id="home">
-        <div class="intro-text" data-aos="fade-up">
-          <h1>Hello👋, I'm <span class="name">Zi Fung 🤓</span></h1>
+      <div class="intro-text" data-aos="fade-up">
+        <h1 class="name">Zi Fung</h1>
+        <div class="typed-wrapper">
           <h2>I'm a <span id="typed"></span></h2>
         </div>
-        <!-- 🔽 Scroll Prompt -->
+      </div>
+
+
         <a href="#about" class="scroll-prompt"> Welcome </a>
       </section>
 
@@ -95,20 +96,6 @@
               shows, and music, and view your media consumption through dynamic
               charts and timelines. Add friends, share your media snapshots, and
               discover new favorites through social sharing.
-              <ul>
-                <li>
-                  ✅ Built with modular Flask architecture
-                </li>
-                <li>
-                  📊 Features personalized dashboards powered by Chart.js
-                </li>
-                <li>
-                  🔐 User authentication, friend system, and activity tracking
-                </li>
-                <li>
-                  🧪 Tested with Pytest and Selenium for reliability
-                </li>
-              </ul>
             </p>
             <a
               class="github-link"
@@ -128,11 +115,6 @@
               The site architecture is modular and fully client-side, leveraging several external
               libraries to enable dynamic effects and a smooth user experience. 
             </p>
-            <ul>
-              <li>📈 AOS, Typed.js, SlickJS, TagCanvas, and PhotoSwipe integrations</li>
-              <li>📬 Formspree-based contact system (no backend)</li>
-              <li>⚙️ Fully responsive and accessible, optimized for performance</li>
-            </ul>
             <a
               class="github-link"
               href="https://github.com/ZFUNG14/DigitalPortfolio"
@@ -152,13 +134,6 @@
               lifecycle tracking, from diagnosis and lab testing to prescriptions 
               and treatment management, all without an external database.
             </p>
-              <ul>
-                <li>✅ Built with Java, JavaFX, and custom object serialization</li>
-                <li>🗂️ Modular MVC design for maintainability and scalability</li>
-                <li>👨‍⚕️ Role-based access for doctors, patients, and medical staff</li>
-                <li>🧪 Supports lab test logic (CBC, Drug, Urinalysis) with auto-interpretation</li>
-                <li>💾 Uses file-based persistence to mimic database functionality</li>
-              </ul>
             <a
               class="github-link"
               href="https://github.com/ZFUNG14/Medix"
@@ -176,11 +151,6 @@
               written in a custom-designed mini-language (.ml). Runml transpiles high-level .ml source code into C11, compiles 
               the result, and executes the output, all within a single utility. 
             </p>
-            <ul>
-              <li>⚙️ Written in standard C11 with POSIX system calls (no third-party dependencies)</li>
-              <li>🔁 End-to-end execution: transpilation ➝ compilation ➝ execution ➝ cleanup</li>
-              <li>💻 Demonstrates low-level systems knowledge: process management, I/O, and compilation automation</li>
-            </ul>
             <a
               class="github-link"
               href="https://github.com/ZFUNG14/runML"
@@ -225,12 +195,6 @@
             . The final logistic regression model 
             incorporated interactions and was refined using AIC-based stepwise selection.
             </p>
-            <ul>
-              <li> 📊 Built using logistic regression and interaction modeling</li>
-              <li> 📉 AIC-driven model refinement with stepAIC() from MASS package</li>
-              <li> 👩‍⚕️ Analyzed maternal factors: age, weight, smoking, hypertension, etc.</li>
-              <li> 🔍 Visualized trends and residuals for diagnostics and insights</li>
-            </ul>
             <a
               class="github-link"
               href="https://github.com/ZFUNG14/LowBirthWeightwithLogisticRegression"
@@ -252,11 +216,6 @@
                 The model uncovered how workload, income, and gender/residency
                 interactions affect complaint frequency.
             </p>
-            <ul>
-              <li> 📊 Modeled overdispersed count data using Poisson, Negative Binomial, ZIP, and ZINB approaches</li>
-              <li> 🧠 Applied Zero-Inflated Negative Binomial with interaction terms as final model</li>
-              <li> 🧪 Performed residual diagnostics, AIC comparison, and visual model checks</li>
-            </ul>
             <a
               class="github-link"
               href="https://github.com/ZFUNG14/ZINBModeling"
@@ -277,13 +236,6 @@
               PostgreSQL-based data warehouse, and generating interactive insights 
               using Power BI and association rule mining in Python.
            </p>
-           <ul>
-              <li> 🧱 Designed a star schema with 8+ dimensions and a central fact table for fatal crash events </li>
-              <li> 📊 Built dynamic dashboards in Power BI to visualize regional crash patterns and trends</li>
-              <li>🧼 Implemented robust ETL with Pandas to clean, transform, and load real-world datasets</li>
-              <li>🔍 Applied association rule mining to uncover high-risk patterns among road user groups</li>
-              <li>🧠 Proposed data-driven safety recommendations for policymakers based on mined insights</li>
-            </ul>
             <a
               class="github-link"
               href="https://github.com/ZFUNG14/DataWarehouseDesign"
@@ -302,13 +254,6 @@
               crashes, people, vehicles, and locations to reveal actionable insights using graph 
               traversal and pattern matching.
               </p>
-              <ul>
-                <li> 🧠 Designed a normalized property graph using Arrows App to model crash networks </li>
-                <li> 🛠️ Performed ETL from tabular data to CSV node/edge files for Neo4j ingestion </li>
-                <li> 🔍 Executed Cypher queries to extract patterns by time, vehicle type, gender, and geography </li>
-                <li> 📈 Explored advanced queries like multi-hop paths and peak-hour regional analysis</li>
-                <li> 🌐 Investigated real-world applications of graph data science in road safety</li>
-              </ul>
             <a
               class="github-link"
               href="https://github.com/ZFUNG14/GraphDBandCypherQuery"
