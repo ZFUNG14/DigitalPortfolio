@@ -1,4 +1,9 @@
 /*<!-------------------------------Global Style------------------------------------------------> */
+html {
+  overflow-x: hidden;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,24 +13,43 @@ body {
   color: #fff;
   transition: padding-left 0.3s ease;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
-main section:not(.hero)  {
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: auto;
-}
+  main section:not(.hero)  {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
 
-h2{
-  color: #fff;
-  font-weight: 700;
-  font-size: 2.5em;
-}
+@media (max-width: 1800px) {
+  h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5em;
+  }
 
-p {
-  font-family:  'Montserrat', sans-serif;
-  font-size: 1.2em;
-  line-height: 1.6;
+
+  h3 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+  }
+
+  h4{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.0em;
+  }
+
+  p {
+    font-family:  'Poppins', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
 }
 
 /*<!-------------------------------Back to top button------------------------------------------------> */
@@ -101,7 +125,7 @@ p {
 /*<!-------------------------------Hero Area------------------------------------------------> */
 .hero {
   position: relative;
-  min-height: 100vh; /* fill full viewport */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,11 +176,8 @@ p {
 }
 
 .typed-wrapper h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
-  font-weight: 600;
-  color: #ffffff;
-  white-space: nowrap;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
 }
 
 .name::after {
@@ -173,7 +194,7 @@ p {
 }
 
 .scroll-prompt {
-  position: absolute; /* stays inside .hero */
+  position: absolute;
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
@@ -186,7 +207,7 @@ p {
   transition: background-color 0.3s ease, transform 0.3s ease;
   animation: bounce 2s infinite;
   font-weight: bold;
-  z-index: 1100; /* ensure it’s above inner text */
+  z-index: 1100; 
 }
 
 .scroll-prompt:hover {
