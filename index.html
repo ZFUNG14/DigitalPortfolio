@@ -3,15 +3,15 @@
   <!-------------------------------Head Content------------------------------------------------>
   <head>
     <meta charset="UTF-8" />
-    <!--<link rel="icon" type="image/png" href="media/icon2.png" /> -->
-    <title>ZiFung's Portfolio</title>
+    <link rel="icon" type="image/png" href="media/icon.png" />
+    <title>Zi Fung</title>
     <link rel="stylesheet" href="style.css" />
 
     <!-- AOS link -->
     <link rel="stylesheet" href="libs/aos.css" />
 
-    <!-- tagcanvas for skill section -->
-    <script src="libs/tagcanvas.min.js"></script>
+    <!-- tagcanvas for skill section -->  
+    <script src="libs/tagcanvas.min.js"></script> 
 
     <!-- Slick CSS from CDN -->
     <link
@@ -38,11 +38,13 @@
       href="https://cdn.jsdelivr.net/npm/photoswipe-dynamic-caption-plugin@1.2.7/photoswipe-dynamic-caption-plugin.css"
     />
 
-    <!-- Google Font-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -51,20 +53,23 @@
     <main>
       <!-------------------------------Main Hero Section with TypeScript------------------------------------------------>
       <section class="hero" id="home">
-        <div class="intro-text" data-aos="fade-up">
-          <h1>Hello👋, I'm <span class="name">Zi Fung 🤓</span></h1>
+      <div class="intro-text" data-aos="fade-up">
+        <h1 class="name">Zi Fung</h1>
+        <div class="typed-wrapper">
           <h2>I'm a <span id="typed"></span></h2>
         </div>
-        <!-- 🔽 Scroll Prompt -->
+      </div>
+
+
         <a href="#about" class="scroll-prompt"> Welcome </a>
       </section>
 
       <!-------------------------------About Section------------------------------------------------>
       <section id="about">
-        <h2 data-aos="fade-right">About 👨🏼‍💻</h2>
+        <h3 data-aos="fade-right">👋🏼 About</h3>
         <div class="about-container">
           <div class="about-photo" data-aos="fade-right">
-            <img src="media/ZF.JPG" alt="Zi Fung's photo" class="mugshot" />
+            <img src="media/ZF.jpg" alt="Zi Fung's photo" class="mugshot" />
           </div>
           <div class="about-text" data-aos="fade-left">
             <p>
@@ -85,9 +90,9 @@
       <!-------------------------------Project Section------------------------------------------------>
       <section id="projects">
         <div data-aos="fade-left">
-          <h2>Projects 📁</h2>
+          <h3>Projects 📁</h3>
           <div class="project-card">
-            <h3>🗺️  Soul Maps</h3>
+            <h4>🗺️  Soul Maps</h4>
             <p>
               A personal media tracker and social sharing platform built with
               Flask. Track what you read, watch, and listen to and turn it into
@@ -95,20 +100,6 @@
               shows, and music, and view your media consumption through dynamic
               charts and timelines. Add friends, share your media snapshots, and
               discover new favorites through social sharing.
-              <ul>
-                <li>
-                  ✅ Built with modular Flask architecture
-                </li>
-                <li>
-                  📊 Features personalized dashboards powered by Chart.js
-                </li>
-                <li>
-                  🔐 User authentication, friend system, and activity tracking
-                </li>
-                <li>
-                  🧪 Tested with Pytest and Selenium for reliability
-                </li>
-              </ul>
             </p>
             <a
               class="github-link"
@@ -120,19 +111,14 @@
         </div>
 
         <div data-aos="fade-right">
-          <div class="project-card" >
-            <h3>📢  Digital Portfolio</h3>
+          <div class="project-card align-right" >
+            <h4>📢  Digital Portfolio</h4>
 
             <p>
               A responsive, single-page portfolio site built using HTML, CSS, and JavaScript.
               The site architecture is modular and fully client-side, leveraging several external
               libraries to enable dynamic effects and a smooth user experience. 
             </p>
-            <ul>
-              <li>📈 AOS, Typed.js, SlickJS, TagCanvas, and PhotoSwipe integrations</li>
-              <li>📬 Formspree-based contact system (no backend)</li>
-              <li>⚙️ Fully responsive and accessible, optimized for performance</li>
-            </ul>
             <a
               class="github-link"
               href="https://github.com/ZFUNG14/DigitalPortfolio"
@@ -144,7 +130,7 @@
 
         <div  data-aos="fade-left">
           <div class="project-card">
-            <h3>🏥  Medix: Electronic Medical Record System</h3>
+            <h4>🏥  Medix: Electronic Medical Record System</h4>
             <p>
               A fully functional desktop-based EMR system built in Java. 
               Medix simulates real-world hospital workflows, enabling role-based
@@ -152,13 +138,6 @@
               lifecycle tracking, from diagnosis and lab testing to prescriptions 
               and treatment management, all without an external database.
             </p>
-              <ul>
-                <li>✅ Built with Java, JavaFX, and custom object serialization</li>
-                <li>🗂️ Modular MVC design for maintainability and scalability</li>
-                <li>👨‍⚕️ Role-based access for doctors, patients, and medical staff</li>
-                <li>🧪 Supports lab test logic (CBC, Drug, Urinalysis) with auto-interpretation</li>
-                <li>💾 Uses file-based persistence to mimic database functionality</li>
-              </ul>
             <a
               class="github-link"
               href="https://github.com/ZFUNG14/Medix"
@@ -170,17 +149,12 @@
 
         <div data-aos="fade-right">
           <div class="project-card">
-            <h3>📠  runml (C Mini-Language Transpiler)</h3>
+            <h4>📠  runml (C Mini-Language Transpiler)</h4>
             <p>
               A command-line utility written in C11 that compiles and executes programs
               written in a custom-designed mini-language (.ml). Runml transpiles high-level .ml source code into C11, compiles 
               the result, and executes the output, all within a single utility. 
             </p>
-            <ul>
-              <li>⚙️ Written in standard C11 with POSIX system calls (no third-party dependencies)</li>
-              <li>🔁 End-to-end execution: transpilation ➝ compilation ➝ execution ➝ cleanup</li>
-              <li>💻 Demonstrates low-level systems knowledge: process management, I/O, and compilation automation</li>
-            </ul>
             <a
               class="github-link"
               href="https://github.com/ZFUNG14/runML"
@@ -192,7 +166,7 @@
 
         <div data-aos="fade-left">
           <div class="project-card">
-            <h3>🎧  Spotify Advanced Playback Control Plugin</h3>
+            <h4>🎧  Spotify Advanced Playback Control Plugin</h4>
 
             <p>
               Currently developing a Spotify plugin designed to enhance
@@ -217,7 +191,7 @@
 
         <div data-aos="fade-right">
           <div class="project-card">
-            <h3>👶🏼  Low Birth Weight Predictor</h3>
+            <h4>👶🏼  Low Birth Weight Predictor</h4>
             <p>
             A statistical modeling project aimed at identifying maternal 
             risk factors associated with low birth weight in newborns. This 
@@ -225,12 +199,6 @@
             . The final logistic regression model 
             incorporated interactions and was refined using AIC-based stepwise selection.
             </p>
-            <ul>
-              <li> 📊 Built using logistic regression and interaction modeling</li>
-              <li> 📉 AIC-driven model refinement with stepAIC() from MASS package</li>
-              <li> 👩‍⚕️ Analyzed maternal factors: age, weight, smoking, hypertension, etc.</li>
-              <li> 🔍 Visualized trends and residuals for diagnostics and insights</li>
-            </ul>
             <a
               class="github-link"
               href="https://github.com/ZFUNG14/LowBirthWeightwithLogisticRegression"
@@ -242,7 +210,7 @@
 
         <div data-aos="fade-left">
           <div class="project-card">
-            <h3>💊 Modeling Doctor Complaints with Zero-Inflated Negative Binomial Regression</h3>
+            <h4>💊 Modeling Doctor Complaints with Zero-Inflated Negative Binomial Regression</h4>
             <p>
               A statistical modeling project analyzing doctor 
               complaints in emergency services using advanced 
@@ -252,11 +220,6 @@
                 The model uncovered how workload, income, and gender/residency
                 interactions affect complaint frequency.
             </p>
-            <ul>
-              <li> 📊 Modeled overdispersed count data using Poisson, Negative Binomial, ZIP, and ZINB approaches</li>
-              <li> 🧠 Applied Zero-Inflated Negative Binomial with interaction terms as final model</li>
-              <li> 🧪 Performed residual diagnostics, AIC comparison, and visual model checks</li>
-            </ul>
             <a
               class="github-link"
               href="https://github.com/ZFUNG14/ZINBModeling"
@@ -268,7 +231,7 @@
 
         <div data-aos="fade-right">
           <div class="project-card">
-            <h3>🚦 Data Warehouse Design and Implementation for Road Safety Analytics</h3>
+            <h4>🚦 Data Warehouse Design and Implementation for Road Safety Analytics</h4>
               <p>
               
               A real-world data warehousing and analytics project built to support 
@@ -277,13 +240,6 @@
               PostgreSQL-based data warehouse, and generating interactive insights 
               using Power BI and association rule mining in Python.
            </p>
-           <ul>
-              <li> 🧱 Designed a star schema with 8+ dimensions and a central fact table for fatal crash events </li>
-              <li> 📊 Built dynamic dashboards in Power BI to visualize regional crash patterns and trends</li>
-              <li>🧼 Implemented robust ETL with Pandas to clean, transform, and load real-world datasets</li>
-              <li>🔍 Applied association rule mining to uncover high-risk patterns among road user groups</li>
-              <li>🧠 Proposed data-driven safety recommendations for policymakers based on mined insights</li>
-            </ul>
             <a
               class="github-link"
               href="https://github.com/ZFUNG14/DataWarehouseDesign"
@@ -295,20 +251,13 @@
 
         <div data-aos="fade-left">
           <div class="project-card">
-            <h3>🧩 Graph Database: Road Crash Graph Insights (Neo4j)</h3>
+            <h4>🧩 Graph Database: Road Crash Graph Insights (Neo4j)</h4>
             <p>
               A property graph database project focused on fatal road crashes in Australia.
               Using Neo4j and Cypher query, my report captures complex interactions among 
               crashes, people, vehicles, and locations to reveal actionable insights using graph 
               traversal and pattern matching.
               </p>
-              <ul>
-                <li> 🧠 Designed a normalized property graph using Arrows App to model crash networks </li>
-                <li> 🛠️ Performed ETL from tabular data to CSV node/edge files for Neo4j ingestion </li>
-                <li> 🔍 Executed Cypher queries to extract patterns by time, vehicle type, gender, and geography </li>
-                <li> 📈 Explored advanced queries like multi-hop paths and peak-hour regional analysis</li>
-                <li> 🌐 Investigated real-world applications of graph data science in road safety</li>
-              </ul>
             <a
               class="github-link"
               href="https://github.com/ZFUNG14/GraphDBandCypherQuery"
@@ -316,12 +265,12 @@
               >More</a
             >
           </div>
-        </div>
+        </div>  
       </section>
 
       <!-------------------------------Skills Section------------------------------------------------>
       <section id="skills" data-aos="fade-left">
-        <h2>Skills 🛠️</h2>
+        <h3>Skills 🛠️</h3>
         <p>A summary of the core tecnologies I work with daily:</p>
         <div class="skill-section">
           <div id="myCanvasContainer">
@@ -365,11 +314,12 @@
 
       <!-------------------------------Outside work/studies section------------------------------------------------>
       <section id="interest" data-aos="fade-up">
-        <h2>📸 When I’m not coding,</h2>
+        <h3>📸 When I’m not coding,</h3>
         <p>
           You'll find me shooting film! This hobbies
           keep my creativity flowing and inspire new ways of thinking in tech.
-          Here are some of my favourite photos taken with my Kodak KB10:
+          Besides, it allow me to capture the world around me in a
+          tangible way. Here are some of my favourite photos taken with my Kodak KB10:
         </p>
         <div class="my-gallery">
           <div class="photo-collage" id="gallery">
@@ -387,47 +337,47 @@
                 data-pswp-width="2317"
                 data-pswp-height="1536"
               >
-                <img src="media/Film/sabah.jpg" />
+                <img src="media/Film/sabah.JPG" />
               </a>
             </div>
             <div class="second-column" data-aos="fade-up">
               <a
-                href="media/Film/operahouse.jpg"
+                href="media/Film/operahouse.JPG"
                 data-pswp-width="2319"
                 data-pswp-height="1536"
               >
-                <img src="media/Film/operahouse.jpg"/>
+                <img src="media/Film/operahouse.JPG"/>
               </a>
               <a
-                href="media/Film/KL.jpg"
+                href="media/Film/KL.JPG"
                 data-pswp-width="1536"
                 data-pswp-height="2317"
               >
-                <img src="media/Film/KL.jpg"/>
+                <img src="media/Film/KL.JPG"/>
               </a>
             </div>
 
             <div class="last-column" data-aos="fade-left">
               <a
-                href="media/Film/Ttemple.jpg"
+                href="media/Film/Ttemple.JPG"
                 data-pswp-width="2317"
                 data-pswp-height="1536"
               >
-                <img src="media/Film/Ttemple.jpg" />
+                <img src="media/Film/Ttemple.JPG" />
               </a>
               <a
-                href="media/Film/rawang.jpg"
+                href="media/Film/rawang.JPG"
                 data-pswp-width="2317"
                 data-pswp-height="1536"
               >
-                <img src="media/Film/rawang.jpg"/>
+                <img src="media/Film/rawang.JPG"/>
               </a>
               <a
-                href="media/Film/Mtemple1.jpg"
+                href="media/Film/Mtemple1.JPG"
                 data-pswp-width="2317"
                 data-pswp-height="1536"
               >
-                <img src="media/Film/Mtemple1.jpg" />
+                <img src="media/Film/Mtemple1.JPG" />
               </a>
             </div>
           </div>
@@ -438,7 +388,7 @@
 
       <section id="extracurriculars">
         <div data-aos="fade-up-left">
-          <h2>🇲🇾 Studies aside,</h2>
+          <h3>🇲🇾 Studies aside,</h3>
           <p>
             I am also actively involved in the
             <a
@@ -496,12 +446,12 @@
             </div>
             <div>
               <a
-                href="media/MCS media/MnG.JPG"
+                href="media/MCS media/MnG.jpg"
                 data-pswp-width="2048"
                 data-pswp-height="1428"
               >
                 <img
-                  src="media/MCS media/MnG.JPG"
+                  src="media/MCS media/MnG.jpg"
                   alt="Meet N Greet event 2025"
                 />
                 <span class="pswp-caption-content"
@@ -518,11 +468,11 @@
             </div>
             <div>
               <a
-                href="media/MCS media/raya.JPG"
+                href="media/MCS media/raya.jpg"
                 data-pswp-width="2048"
                 data-pswp-height="1366"
               >
-                <img src="media/MCS media/raya.JPG" alt="Raya Event Crowd" />
+                <img src="media/MCS media/raya.jpg" alt="Raya Event Crowd" />
                 <span class="pswp-caption-content"
                   ><div class = "caption-container"><h3 class = "captionHeading">Ria Raya!</h3><p class = "caption">
                   Ria Raya is argueably hands-down the biggest event the club has ever hosted since the creation of the club, 
@@ -553,11 +503,11 @@
             </div>
             <div>
               <a
-                href="media/MCS media/sports.JPG"
+                href="media/MCS media/sports.jpg"
                 data-pswp-width="2048"
                 data-pswp-height="1365"
               >
-                <img src="media/MCS media/sports.JPG" alt="MCS Sports Team" />
+                <img src="media/MCS media/sports.jpg" alt="MCS Sports Team" />
                 <span class="pswp-caption-content"
                   ><div class = "caption-container"><h3 class = "captionHeading">Sports Event</h3><p class = "caption">
                   Other than cultural celebrations and social gatherings, MCS also organises casual sports events to help members 
@@ -598,7 +548,7 @@
 
       <!-------------------------------Contact Section with formspree------------------------------------------------>
       <section id="contact" data-aos="fade-up">
-        <h2>Contact Me 📩</h2>
+        <h3>Contact Me 📩</h3>
         <form action="https://formspree.io/f/xldnkwzb" method="POST">
           <input type="text" name="name" placeholder="Your Name" required />
           <input
