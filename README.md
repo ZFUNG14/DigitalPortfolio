@@ -1,6 +1,6 @@
 # 🎉 Welcome!
 
-This source code powers **Tan Zi Fung's personal digital portfolio**, currently hosted at [DOMAIN NAME](https://).  
+This source code powers **Tan Zi Fung's personal digital portfolio**, currently hosted [here](https://zfung14.github.io/DigitalPortfolio/).  
 It showcases my projects, skills, and background, with a clean, scroll driven interface and interactive animations.
 
 ---
@@ -12,7 +12,7 @@ This portfolio is built using:
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **Four Key External Libraries** (detailed below)
+- **SIX Key External Libraries** (detailed below)
 
 ---
 
